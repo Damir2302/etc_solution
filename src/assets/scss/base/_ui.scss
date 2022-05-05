@@ -3,7 +3,7 @@ html {
   }
 
 body {
-    background: #fff;
+    background: linear-gradient(90deg, #3D424D 0%, #42464F 100%);
     -webkit-text-size-adjust: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -30,7 +30,6 @@ background: rgba(0, 0, 0, 0.2);
 
 #page {
     position: relative;
-    background-color: #ffffff;
     min-width: 320px;
     min-height: 100%;
     max-width: 100%;
@@ -42,7 +41,7 @@ background: rgba(0, 0, 0, 0.2);
     padding: 0 20px;
     position: relative;
     width: 100%;
-    max-width: 1186px;
+    max-width: 1600px;
     box-sizing: border-box;
 
     @include breakpoint(md) {

@@ -1,3 +1,30 @@
 block header
 
     header#header.header
+
+        .header__logo
+            img(src="assets/images/logo.svg", alt="logo")
+
+        nav.header__nav
+            ul
+                li.nav__item
+                    a.nav__item-link(href="#") Каталог
+                li.nav__item
+                    a.nav__item-link(href="#") Компания
+                li.nav__item
+                    a.nav__item-link(href="#") Услуги
+                li.nav__item
+                    a.nav__item-link(href="#") Yовости
+                li.nav__item
+                    a.nav__item-link(href="#") Контакты
+
+        .header__action
+
+            .header-phone
+                .far.fa-phone
+                a(href="tel:88002002020") 8 800 200 2020
+
+            .header-search
+                input(type="search" name="search")
+                button#searchBtn
+                    .far.fa-search
