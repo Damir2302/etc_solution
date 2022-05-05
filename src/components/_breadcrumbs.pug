@@ -1,0 +1,18 @@
+mixin breadcrumbs(title, ...items)
+
+    .breadcrumbs
+
+        .container
+
+            .breadcrumbs-wrapper
+
+                .breadcrumbs-item
+                    a(href='/') Главная
+
+                each item in items
+
+                    .breadcrumbs-item
+                        span.breadcrumbs-separator —
+                        a(href='#')= item
+
+            h1.page-title= title
