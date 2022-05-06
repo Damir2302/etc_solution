@@ -5,3 +5,37 @@ title: ETC - Solution
 extends includes/_page
 
 block main
+
+    // Hero::Start
+    section.section-hero
+
+        .swiper.hero__slider
+
+            .swiper-wrapper
+
+                .swiper-slide
+                    .hero__slide(style="background-image: url('assets/images/grad.jpg')")
+                        .container
+                            p.hero__subtitle Профессиональная оснастка
+                            h2.hero__title Инструменты для механообработки
+                            button.button-style.hero__button Подробнее
+
+                .swiper-slide
+                    .hero__slide(style="background-image: url('assets/images/grad.jpg')")
+                        .container
+                            p.hero__subtitle Профессиональная оснастка
+                            h2.hero__title Инструменты для механообработки
+                            button.button-style.hero__button Подробнее
+
+            .custom-pagintaion
+                .container
+                    .swiper-custom-pagination
+                        .swiper-btn
+                            .swiper-button-prev.swiper-button
+                            .swiper-button-next.swiper-button
+                        .slides-number
+                            span.current-number
+                            span.s-progress
+                                span
+                            span.last-number
+    // Hero::End
