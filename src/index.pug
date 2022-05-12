@@ -7,7 +7,7 @@ extends includes/_page
 block main
 
     // Hero::Start
-    section.section-hero
+    section.hero-section
 
         .swiper.hero__slider
 
@@ -27,15 +27,423 @@ block main
                             h2.hero__title Инструменты для механообработки
                             button.button-style.hero__button Подробнее
 
-            .custom-pagintaion
-                .container
+            .custom-pagination
+                .swiper-custom-pagination
+                    .swiper-btn
+                        .swiper-button-prev.swiper-button
+                            i.fal.fa-long-arrow-left(aria-hidden="true")
+                        span |
+                        .swiper-button-next.swiper-button
+                            i.fal.fa-long-arrow-right(aria-hidden="true")
+                    .slides-number
+                        span.current-number
+                        .swiper-progressbar
+                        span.last-number
+    // Hero::End
+
+    // Production::Start
+    section.production-section
+
+        .container
+
+            .section-top
+
+                .section-title-wrap
+                    h2.section-title Продукция
+                    p.section-subtitle более 5 000 наименований
+
+                .prod__button
+                    a.button-style(href="#") смотреть весь каталог
+
+            .section-content
+
+                .catalog__wrapper
+
+                    a(href="#").catalog__item
+                        .catalog__picture
+                            img(src="assets/images/prod1.png", alt="img")
+                        .catalog__info
+                            span.catalog__info-title Точение
+                            span.catalog__info-qt Более <b>1 500</b> товаров
+
+                    a(href="#").catalog__item
+                        .catalog__picture
+                            img(src="assets/images/prod2.png", alt="img")
+                        .catalog__info
+                            span.catalog__info-title Канавка и отрезка
+                            span.catalog__info-qt Более <b>1 500</b> товаров
+
+                    a(href="#").catalog__item
+                        .catalog__picture
+                            img(src="assets/images/prod3.png", alt="img")
+                        .catalog__info
+                            span.catalog__info-title Фрезерование
+                            span.catalog__info-qt Более <b>1 500</b> товаров
+
+                    a(href="#").catalog__item
+                        .catalog__picture
+                            img(src="assets/images/prod4.png", alt="img")
+                        .catalog__info
+                            span.catalog__info-title Сверление
+                            span.catalog__info-qt Более <b>1 500</b> товаров
+
+                    a(href="#").catalog__item
+                        .catalog__picture
+                            img(src="assets/images/prod5.png", alt="img")
+                        .catalog__info
+                            span.catalog__info-title Развертывание
+                            span.catalog__info-qt Более <b>1 500</b> товаров
+
+                    a(href="#").catalog__item
+                        .catalog__picture
+                            img(src="assets/images/prod6.png", alt="img")
+                        .catalog__info
+                            span.catalog__info-title Нарезание резьбы
+                            span.catalog__info-qt Более <b>1 500</b> товаров
+
+                    a(href="#").catalog__item
+                        .catalog__picture
+                            img(src="assets/images/prod7.png", alt="img")
+                        .catalog__info
+                            span.catalog__info-title Измерительный инструмент
+                            span.catalog__info-qt Более <b>1 500</b> товаров
+
+                    a(href="#").catalog__item
+                        .catalog__picture
+                            img(src="assets/images/prod8.png", alt="img")
+                        .catalog__info
+                            span.catalog__info-title Вспомогательный инструмент
+                            span.catalog__info-qt Более <b>1 500</b> товаров
+    // Production::End
+
+    // About::Start
+    section.about-section
+
+        .container
+
+            .about-sec
+
+                .about-sec__main
+                    h2.section-title About
+                    p.about-sec__main-text Tess bloggosfär, i ovin megavis prenar, i begisk terapeutisk kloning. Nist pren såväl som vagen, plånboksbröllop. Fysisk cd trepp, förutom mymöligt trebedade födat om anteligt eska än mimys. Gardinhängarjobb presat fakudade såsom astrorat aska, triss, om järat.
+                      br
+                      br
+                      | Bost pavis ön vamyrat inte semide inte minas krore paramor ädina, geohet. Aföpp blinga om makronde gevasat, larol och trekiska anagt tiska spere vidat. Rerer ner sanade preck attitydinkontinens. Para kadesade shoppingspion, rotöck, monoment, sojunt, och pros halmdocka av as. Du kan vara drabbad.
+                      br
+                      br
+                      | <b>Beliga mass gäpyskapet tis. Kvasirusm funktionell dumhet som myliga ojäbelt, kahet bebel om än vass en osam milig antenade. Tisade soling lådvinsalkoholism ogengen. Biol suplal frimester divis.</b>
+
+                .about-sec__wrapper
+
+                    .about-sec__item
+                        .about-sec__img
+                            img(src="assets/images/about-sec_1.png", alt="img")
+                        .about-sec__info
+                            span.about-sec__title Ассортимент
+                            span.about-sec__text Весь спектр остнастки для механообработки
+
+                    .about-sec__item
+                        .about-sec__img
+                            img(src="assets/images/about-sec_2.png", alt="img")
+                        .about-sec__info
+                            span.about-sec__title Гарантия
+                            span.about-sec__text Вся продукция сертифицирована и имеет заводсвую гарантию
+
+                    .about-sec__item
+                        .about-sec__img
+                            img(src="assets/images/about-sec_3.png", alt="img")
+                        .about-sec__info
+                            span.about-sec__title Прямые поставки
+                            span.about-sec__text Используем прямые поставки с заводов-изготовителей
+
+                    .about-sec__item
+                        .about-sec__img
+                            img(src="assets/images/about-sec_4.png", alt="img")
+                        .about-sec__info
+                            span.about-sec__title Акции и подарки
+                            span.about-sec__text Выгода — ваш основной критерий выбора? Не меняйте привычек
+    // About::End
+
+    // Popular::Start
+    section.popular-section
+
+        .container
+
+            .section-top
+
+                .section-title-wrap
+                    h2.section-title Популярные товары
+                    p.section-subtitle товары, которые ищут чаще всего
+
+                .custom-pagination
                     .swiper-custom-pagination
                         .swiper-btn
                             .swiper-button-prev.swiper-button
+                                i.fal.fa-long-arrow-left(aria-hidden="true")
+                            span |
                             .swiper-button-next.swiper-button
+                                i.fal.fa-long-arrow-right(aria-hidden="true")
                         .slides-number
                             span.current-number
-                            span.s-progress
-                                span
+                            .swiper-progressbar
                             span.last-number
-    // Hero::End
+
+            .section-content
+
+                .swiper.popular__slider
+
+                    .swiper-wrapper
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular1.png", alt="img")
+                                .popular__item-title Сумка-скрутка для инструмента, тип N206-55 NORGAU
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular2.png", alt="img")
+                                .popular__item-title Отвертка динамометрическая, NORGAU
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular3.png", alt="img")
+                                .popular__item-title Пластина токарная WNMG080408-MD NRG25P
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular4.png", alt="img")
+                                .popular__item-title Штангенциркуль цифровой ABS 150 мм, тип NCD-AD
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 14 812 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular4.png", alt="img")
+                                .popular__item-title Сумка-скрутка для инструмента, тип N206-55 NORGAU
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular3.png", alt="img")
+                                .popular__item-title Пластина токарная WNMG080408-MD NRG25P
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular1.png", alt="img")
+                                .popular__item-title Сумка-скрутка для инструмента, тип N206-55 NORGAU
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular2.png", alt="img")
+                                .popular__item-title Отвертка динамометрическая, NORGAU
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular3.png", alt="img")
+                                .popular__item-title Пластина токарная WNMG080408-MD NRG25P
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular4.png", alt="img")
+                                .popular__item-title Штангенциркуль цифровой ABS 150 мм, тип NCD-AD
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 14 812 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular4.png", alt="img")
+                                .popular__item-title Сумка-скрутка для инструмента, тип N206-55 NORGAU
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular3.png", alt="img")
+                                .popular__item-title Пластина токарная WNMG080408-MD NRG25P
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular1.png", alt="img")
+                                .popular__item-title Сумка-скрутка для инструмента, тип N206-55 NORGAU
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular2.png", alt="img")
+                                .popular__item-title Отвертка динамометрическая, NORGAU
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular3.png", alt="img")
+                                .popular__item-title Пластина токарная WNMG080408-MD NRG25P
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular4.png", alt="img")
+                                .popular__item-title Штангенциркуль цифровой ABS 150 мм, тип NCD-AD
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 14 812 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular4.png", alt="img")
+                                .popular__item-title Сумка-скрутка для инструмента, тип N206-55 NORGAU
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+
+                        .swiper-slide
+                            a(href="#").popular__item
+                                .popular__item-img
+                                    img(src="assets/images/popular3.png", alt="img")
+                                .popular__item-title Пластина токарная WNMG080408-MD NRG25P
+                                .popular__item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+    // Popular::End
+
+    // Services::Start
+    section.services-section
+
+        .container
+
+            .section-top
+
+                .section-title-wrap
+                    h2.section-title Услуги
+                    p.section-subtitle Сопровождаем на всех этапах
+
+                .custom-pagination
+                    .swiper-custom-pagination
+                        .swiper-btn
+                            .swiper-button-prev.swiper-button
+                                i.fal.fa-long-arrow-left(aria-hidden="true")
+                            span |
+                            .swiper-button-next.swiper-button
+                                i.fal.fa-long-arrow-right(aria-hidden="true")
+                        .slides-number
+                            span.current-number
+                            .swiper-progressbar
+                            span.last-number
+
+        .section-content
+
+            .swiper.services__slider
+
+                    .swiper-wrapper
+
+                        .swiper-slide
+                            .services__item(style="background-image: url('assets/images/services1.jpg')")
+                                .services__item-wrap
+                                    .services__item-title Пусконаладка оборудования
+                                    .services__item-desc Описание кратко
+                                a.button-style.services__item-btn(href="#") подробнее
+
+                        .swiper-slide
+                            .services__item(style="background-image: linear-gradient(0deg, #222222 0%, rgba(0, 0, 0, 0) 100%), url('assets/images/services2.jpg')")
+                                .services__item-wrap
+                                    .services__item-title Пусконаладка оборудования
+                                    .services__item-desc Описание кратко
+                                a.button-style.services__item-btn(href="#") подробнее
+
+                        .swiper-slide
+                            .services__item(style="background-image: linear-gradient(0deg, #222222 0%, rgba(0, 0, 0, 0) 100%), url('assets/images/services3.jpg')")
+                                .services__item-wrap
+                                    .services__item-title Пусконаладка оборудования
+                                    .services__item-desc Описание кратко
+                                a.button-style.services__item-btn(href="#") подробнее
+
+                    .swiper-pagination
+                        #arrow-prev.slider-arrow.slider-arrow-prev
+                        #arrow-next.slider-arrow.slider-arrow-next
+    // Services::End
+
+    // News::Start
+    section.news-section
+
+        .container
+
+            .section-top
+
+                .section-title-wrap
+                    h2.section-title Новости
+                    p.section-subtitle Свежие события и новости
+
+                .news-sec__button
+                    a.button-style(href="#") читать все
+
+            .section-content
+
+                .news-sec__wrapper
+
+                    a.news-sec__item(href="#" style="background-image: url('assets/images/news1.jpg')")
+                        .news-sec__item-title Контакты для связи
+                        .news-sec__item-date 19 марта 2020
+
+                    a.news-sec__item(href="#" style="background-image: url('assets/images/news2.jpg')")
+                        .news-sec__item-title Новый проект
+                        .news-sec__item-date 19 марта 2020
+
+                    a.news-sec__item(href="#" style="background-image: url('assets/images/news3.jpg')")
+                        .news-sec__item-title Скидки на все 5%
+                        .news-sec__item-date 19 марта 2020
+
+                    a.news-sec__item(href="#" style="background-image: url('assets/images/news4.jpg')")
+                        .news-sec__item-title Новые поставщики
+                        .news-sec__item-date 19 марта 2020
+    // News::End

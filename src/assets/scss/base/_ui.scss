@@ -42,7 +42,7 @@ background: rgba(0, 0, 0, 0.2);
     position: relative;
     width: 100%;
     max-width: 1600px;
-    box-sizing: border-box;
+    box-sizing: content-box;
 
     @include breakpoint(md) {
         padding: 0 30px;
@@ -56,4 +56,103 @@ background: rgba(0, 0, 0, 0.2);
     border: 1px solid #BBBEC4;
     border-radius: 3px;
     text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.1;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.35;
+    letter-spacing: 0.2em;
+    color: #D3D3D3;
+    text-transform: uppercase;
+}
+
+.section-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__button {
+    margin-top: 95px;
+    position: relative;
+    width: 217px;
+    height: 50px;
+    z-index: 2;
+}
+
+.custom-pagination {
+    position: absolute;
+    top: 770px;
+    left: calc((100vw - 1600px) / 2);
+    z-index: 1;
+}
+
+.swiper-custom-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.swiper-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+
+.swiper-btn span {
+    margin-top: -4px;
+    color: #D1D1D1;
+}
+
+.swiper-button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.swiper-button.swiper-button-disabled {
+    opacity: 1;
+}
+
+.swiper-button::after {
+    content: none;
+}
+
+.slides-number {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.slides-number .swiper-progressbar {
+    margin: 0 10px;
+    background: #D1D1D1;
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+}
+
+.slides-number .swiper-progressbar .swiper-pagination-progressbar-fill {
+    margin-top: -1px;
+    background: #fff;
+    height: 3px;
 }
