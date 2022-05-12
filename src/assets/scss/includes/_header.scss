@@ -46,13 +46,35 @@
 
 .header-search {
     margin-left: 28px;
+    position: relative;
 }
 
 .header-search input {
-    display: none;
+    padding: 14px 30px;
+    background: #3A3E47;
+    position: absolute;
+    top: -50%;
+    right: -20px;
+    width: 0;
+    color: #fff;
+    border-radius: 60px;
+    border: 1px solid #BBBEC4;
+    box-sizing: border-box;
+}
+
+.header-search input.active {
+    width: 455px;
+}
+
+.header-search input::placeholder {
+    font-size: 16px;
+    line-height: 1.375;
+    letter-spacing: 0.2em;
+    color: #fff;
 }
 
 .header-search button {
     background: none;
+    position: relative;
     color: #fff;
 }

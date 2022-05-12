@@ -30,6 +30,7 @@ block header
                         a(href="tel:88002002020") 8 800 200 2020
 
                     .header-search
-                        input(type="search" name="search")
-                        button#searchBtn
-                            .far.fa-search
+                        form
+                            input#searchInput(type="search" name="search" placeholder="Поиск среди товаров" autocomplete="off")
+                            button#searchBtn
+                                .far.fa-search
