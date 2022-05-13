@@ -10,8 +10,8 @@ block header
                     img(src="assets/images/logo.svg", alt="logo")
 
                 // NAVIGATION
-                nav.header__nav
-                    ul
+                nav.header__navbar
+                    ul.nav
                         li.nav__item
                             a.nav__item-link(href="#") Каталог
                         li.nav__item
@@ -23,6 +23,19 @@ block header
                         li.nav__item
                             a.nav__item-link(href="#") Контакты
 
+                    ul.header__socials-mobile
+                        li
+                            a.header__social-link(href="vk.com")
+                                i.fab.fa-vk(aria-hidden="true")
+                        li
+                            a.header__social-link(href="youtube.com")
+                                i.fab.fa-youtube(aria-hidden="true")
+
+                    ul.header__phone-mobile
+                        li
+                            i.far.fa-phone(aria-hidden="true")
+                            a(href="tel:88002002020") 8 800 200 2020
+
                 .header__action
 
                     .header-phone
@@ -31,6 +44,14 @@ block header
 
                     .header-search
                         form
-                            input#searchInput(type="search" name="search" placeholder="Поиск среди товаров" autocomplete="off")
-                            button#searchBtn
-                                .far.fa-search
+                            input#searchInput(type="search" name="search" placeholder="Поиск" autocomplete="off")
+                            button#searchBtn.search-btn
+                                .far.fa-search(aria-hidden="true")
+                            button#closeInput.close-btn
+                                .far.fa-times(aria-hidden="true")
+
+                    .header-burger
+                        .icon-burger#burgerBtn
+                            span
+                            span
+                            span

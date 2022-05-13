@@ -1,7 +1,10 @@
+.main-page .header {
+    position: absolute;
+}
+
 .header {
     padding: 25px 0;
     background: rgba(41, 44, 49, 0.5);
-    position: absolute;
     width: 100%;
     border-bottom: 1px solid #555D6B;
     z-index: 2;
@@ -16,15 +19,155 @@
 .header__logo {
     width: 224px;
     height: 50px;
+
+    @include breakpointMax(xl) {
+        display: flex;
+        width: 180px;
+    }
+
+    @include breakpointMax(md) {
+        width: 250px;
+    }
+
+    @include breakpointMax(xs) {
+        width: 200px;
+    }
 }
 
-.header__nav ul {
-    display: inline-flex;
+.header__navbar {
+
+    @include breakpointMax(lg) {
+        padding: 80px 40px;
+        background: #353A43;
+        position: fixed;
+        top: 101px;
+        right: -100%;
+        min-width: 400px;
+        transition: right .5s ease;
+    }
+
+    @include breakpointMax(md) {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.header__navbar.opened {
+
+    @include breakpointMax(lg) {
+        right: 0;
+    }
+}
+
+.nav {
+    display: flex;
     column-gap: 40px;
+
+    @include breakpointMax(xl) {
+        column-gap: 20px;
+    }
+
+    @include breakpointMax(lg) {
+        flex-direction: column;
+    }
+
+    @include breakpointMax(md) {
+        align-items: center;
+    }
+}
+
+.nav__item {
+
+    @include breakpointMax(lg) {
+        margin-bottom: 40px;
+    }
 }
 
 .nav__item-link {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.375;
     text-transform: uppercase;
+
+    @include breakpointMax(hd) {
+        font-size: 14px;
+    }
+
+    @include breakpointMax(xl) {
+        font-size: 13px;
+    }
+
+    @include breakpointMax(lg) {
+        font-size: 24px;
+    }
+}
+
+.nav__item-link::after {
+    content: '';
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 1px;
+    transition: width .5s ease;
+}
+
+.nav__item-link:hover::after {
+
+    @include breakpoint(lg) {
+        width: 100%;
+    }
+}
+
+.header__socials-mobile {
+    display: none;
+
+    @include breakpointMax(lg) {
+        padding: 30px 0 40px;
+        display: flex;
+    }
+
+    @include breakpointMax(md) {
+        justify-content: center;
+    }
+}
+
+.header__socials-mobile li {
+    margin-right: 20px;
+}
+
+.header__socials-mobile li:last-child {
+    margin: 0;
+}
+
+.header__social-link {
+    font-size: 24px;
+    line-height: 1.16;
+}
+
+.header__phone-mobile {
+    display: none;
+
+    @include breakpointMax(lg) {
+        padding-top: 30px;
+        display: block;
+        border-top: 1px solid rgba(85, 93, 107, 1);
+    }
+}
+
+.header__phone-mobile li {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+
+    @include breakpointMax(md) {
+        justify-content: center;
+    }
+}
+
+.header__phone-mobile a {
+    margin-left: 20px;
 }
 
 .header__action {
@@ -33,6 +176,10 @@
 
 .header-phone {
     display: inline-flex;
+
+    @include breakpointMax(md) {
+        display: none;
+    }
 }
 
 .header-phone i {
@@ -50,20 +197,41 @@
 }
 
 .header-search input {
-    padding: 14px 30px;
+    padding: 14px 90px 14px 30px;
     background: #3A3E47;
     position: absolute;
     top: -50%;
     right: -20px;
     width: 0;
     color: #fff;
+    opacity: 0;
+    visibility: hidden;
     border-radius: 60px;
     border: 1px solid #BBBEC4;
     box-sizing: border-box;
+    transition: width .5s ease, visibility .3s, opacity .5s, right .5s;
+
+    @include breakpointMax(hd) {
+        padding-left: 20px;
+    }
 }
 
 .header-search input.active {
-    width: 455px;
+    width: 400px;
+    opacity: 1;
+    visibility: visible;
+
+    @include breakpointMax(hd) {
+        width: 300px;
+    }
+
+    @include breakpointMax(xl) {
+        width: 250px;
+    }
+
+    @include breakpointMax(lg) {
+        right: 30px;
+    }
 }
 
 .header-search input::placeholder {
@@ -71,10 +239,100 @@
     line-height: 1.375;
     letter-spacing: 0.2em;
     color: #fff;
+
+    @include breakpointMax(hd) {
+        font-size: 14px;
+        letter-spacing: 0.1em;
+    }
 }
 
 .header-search button {
     background: none;
     position: relative;
+    font-size: 16px;
     color: #fff;
+
+    @include breakpointMax(md) {
+        font-size: 24px;
+    }
+
+    @include breakpointMax(xs) {
+        font-size: 20px;
+    }
+}
+
+.header-search button.search-btn {
+    right: 0;
+    transition: right .5s ease;
+}
+
+.header-search button.search-btn.active {
+    right: 20px;
+
+    @include breakpointMax(hd) {
+        right: 10px;
+    }
+
+    @include breakpointMax(lg) {
+        right: 50px;
+    }
+}
+
+.header-search button.close-btn {
+    width: 20px;
+    max-width: 0%;
+    overflow: hidden;
+    visibility: hidden;
+    transition: max-width .5s ease;
+}
+
+.header-search button.close-btn.active {
+    max-width: 100%;
+    visibility: visible;
+
+    @include breakpointMax(lg) {
+        right: 45px;
+    }
+}
+
+.header-burger {
+    display: none;
+
+    @include breakpointMax(lg) {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+.icon-burger {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 6px;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-burger span {
+    background: #fff;
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 2px;
+    transition: all .5s ease;
+}
+
+.icon-burger.opened span:nth-child(1) {
+    top: 8px;
+    transform: rotate(45deg);
+}
+
+.icon-burger.opened span:nth-child(2) {
+    opacity: 0;
+}
+
+.icon-burger.opened span:nth-child(3) {
+    top: -8px;
+    transform: rotate(-45deg);
 }

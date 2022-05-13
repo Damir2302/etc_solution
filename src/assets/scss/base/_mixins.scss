@@ -1,9 +1,9 @@
-$xs: 470px;
+$xs: 375px;
 $sm: 576px;
 $md: 768px;
 $lg: 991px;
-$xl: 1180px;
-$hd: 1400px;
+$xl: 1200px;
+$hd: 1440px;
 
 @mixin breakpoint($point) {
     @if $point == xs {

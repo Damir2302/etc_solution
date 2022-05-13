@@ -2,21 +2,56 @@ $(document).ready(function() {
 
     // SHOW SEARCH INPUT
     $('#searchBtn').on('click', function(e) {
-        e.preventDefault();
-        $('#searchInput').addClass('active');
+        if (!$(this).hasClass('active')) {
+            e.preventDefault();
+            $(this).addClass('active');
+            $('#searchInput').addClass('active');
+            $('#closeInput').addClass('active');
+        } else {
+            e.submit();
+        }
     });
 
-    // $('#searchBtn').on('click', function(e) {
-    //     if (!$('#searchInput').val().length) {
-    //     e.preventDefault();
-    //     $('#searchInput').removeClass('active');
-    //     }
-    // });
+    $('#closeInput').on('click', function(e) {
+        e.preventDefault();
+        $(this).removeClass('active');
+        $('#searchInput').removeClass('active');
+        $('#searchBtn').removeClass('active');
+    })
 
-    // $('html').click(function(e) {
-    //     if (!$(e.target).closest('.header-search').length) {
-    //         $('#searchInput').removeClass('active');
-    //     }
-    // });
+    $('html').click(function(e) {
+        if (!$(e.target).closest('.header-search').length) {
+            $('#searchInput').removeClass('active');
+            $('#searchBtn').removeClass('active');
+            $('#closeInput').removeClass('active');
+        }
+    });
+
+    // BURGER MENU
+    $('#burgerBtn').on('click', function() {
+        $(this).toggleClass('opened');
+        $('body').toggleClass('overflow-hidden');
+        $('.header__navbar').toggleClass('opened');
+    });
+
+    $('html').click(function(e) {
+        if (!$(e.target).closest('.header__navbar').length && !$(e.target).closest('#burgerBtn').length) {
+            $('#burgerBtn').removeClass('opened');
+            $('body').removeClass('overflow-hidden');
+            $('.header__navbar').removeClass('opened');
+        }
+    });
+
+    // FOOTER BRAND SLIDER
+    let footer_brands;
+
+    if ($('.brands__slide').length > 0 && $(window).width() < 990) {
+        footer_brands = new Swiper('.brands__slide', {
+            freeMode: true,
+            slidesPerView: 'auto',
+            spaceBetween: 30
+        });
+
+    }
 
 });
