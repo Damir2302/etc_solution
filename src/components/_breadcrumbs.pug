@@ -12,8 +12,16 @@ mixin breadcrumbs(title, ...items)
 
                 each item in items
 
-                    .breadcrumbs-item
-                        span.breadcrumbs-separator —
-                        a(href='#')= item
+                    if item == items[items.length - 1]
+
+                        .breadcrumbs-item
+                            span.breadcrumbs-separator —
+                            span= item
+
+                    else
+
+                        .breadcrumbs-item
+                            span.breadcrumbs-separator —
+                            a(href="#")= item
 
             h1.page-title= title

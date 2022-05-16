@@ -1,0 +1,97 @@
+---
+title: ETC - Solution | Подбор инструмента для механической обработки изделий
+---
+
+extends includes/_page
+
+block main
+
+    // Breadcrumbs::Start
+    include components/_breadcrumbs
+    +breadcrumbs('Подбор инструмента для механической обработки изделий', 'Услуги', 'Подбор инструмента для механической обработки изделий')
+    // Breadcrumbs::End
+
+    // Service-inner::Start
+    section.service-inner-section
+
+        .container
+
+            .service-inner__content
+
+                .service-inner__image
+                    img(src="assets/images/serv1.jpg", alt="img")
+
+                button Получить консультацию
+
+                p <b>От подбора инструмента и режимов резания для механической обработки изделий напрямую зависит эффективность технологического процесса.</b>
+                  br
+                  br
+                  | На производительность процесса обработки оказывает влияние геометрия инструмента и материал, из которого он изготовлен. Экономические показатели в основном зависят от стойкости инструмента.
+                  br
+                  br
+                  | Сам технологический процесс механической обработки изделий как правило имеет вариативность, т.е. одни и те же задачи возможно решать различными способами, например, использовать несколько единиц стандартного инструмента или одну единицу специального. Чем сложнее изделие, тем более тщательно необходимо относится к выбору инструмента.
+                  br
+                  br
+                  | Наши специалисты имеют профильное высшее образование и многолетний опыт работы, что позволяет им в кратчайшие сроки подбирать наиболее эффективный инструмент, исходя из поставленных задач и имеющихся производственных ресурсов Заказчика.
+
+                // Кнопка - на страницу 'Услуги'
+                .button-return
+                    a.button-style(href="#")
+                        span Назад к списку
+    // Service-inner::End
+
+    // Services::Start
+    section.services-section
+
+        .container
+
+            .section-top
+
+                .section-title-wrap
+                    h2.section-title Еще услуги
+                    p.section-subtitle Сопровождаем на всех этапах
+
+                .custom-pagination
+                    .swiper-custom-pagination
+                        .swiper-btn
+                            .swiper-button-prev.swiper-button
+                                i.fal.fa-long-arrow-left(aria-hidden="true")
+                            span |
+                            .swiper-button-next.swiper-button
+                                i.fal.fa-long-arrow-right(aria-hidden="true")
+                        .slides-number
+                            span.current-number
+                            .swiper-progressbar
+                            span.last-number
+
+        .section-content
+
+            .swiper.services__slider
+
+                    .swiper-wrapper
+
+                        .swiper-slide
+                            .services__item(style="background-image: url('assets/images/services1.jpg')")
+                                .services__item-wrap
+                                    .services__item-title Пусконаладка оборудования
+                                    .services__item-desc Описание кратко
+                                a.button-style.services__item-btn(href="#") подробнее
+
+                        .swiper-slide
+                            .services__item(style="background-image: linear-gradient(0deg, #222222 0%, rgba(0, 0, 0, 0) 100%), url('assets/images/services2.jpg')")
+                                .services__item-wrap
+                                    .services__item-title Пусконаладка оборудования
+                                    .services__item-desc Описание кратко
+                                a.button-style.services__item-btn(href="#") подробнее
+
+                        .swiper-slide
+                            .services__item(style="background-image: linear-gradient(0deg, #222222 0%, rgba(0, 0, 0, 0) 100%), url('assets/images/services3.jpg')")
+                                .services__item-wrap
+                                    .services__item-title Пусконаладка оборудования
+                                    .services__item-desc Описание кратко
+                                a.button-style.services__item-btn(href="#") подробнее
+
+                    .swiper-pagination
+                        #arrow-prev.slider-arrow.slider-arrow-prev
+                        #arrow-next.slider-arrow.slider-arrow-next
+    // Services::End

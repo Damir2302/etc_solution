@@ -1,0 +1,51 @@
+.service-inner-section {
+    padding: 60px 0 48px;
+}
+
+.service-inner__image {
+    width: 100%;
+    max-width: 650px;
+    float: left;
+}
+
+.service-inner__image img {
+    width: 100%;
+}
+
+.service-inner__content button {
+    padding: 14px 47px;
+    background: none;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.2em;
+    border: 1px solid #BBBEC4;
+    border-radius: 3px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.button-return {
+    width: 180px;
+    border-radius: 3px;
+    border: 1px solid #555D6B;
+    transform: translateY(48px);
+    clear: both;
+}
+
+.button-return a {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: unset;
+    text-transform: unset;
+    border: none;
+}
+
+.button-return a::before {
+    content: '\f053';
+    font-family: $icon;
+}

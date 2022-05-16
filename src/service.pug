@@ -6,8 +6,10 @@ extends includes/_page
 
 block main
 
+    // Breadcrumbs::Start
     include components/_breadcrumbs
     +breadcrumbs('Услуги', 'Услуги')
+    // Breadcrumbs::End
 
     // Services::Start
     section.services-section
@@ -18,5 +20,24 @@ block main
 
                 .services__text
                     p <b>Beliga mass gäpyskapet tis. Kvasirusm funktionell dumhet som myliga ojäbelt, kahet bebel om än vass en osam milig antenade. Tisade soling lådvinsalkoholism ogengen. Biol suplal frimester divis.</b>
-                    p Tess bloggosfär, i ovin megavis prenar, i begisk terapeutisk kloning. Nist pren såväl som vagen, plånboksbröllop. Fysisk cd trepp, förutom mymöligt trebedade födat om anteligt eska än mimys. Gardinhängarjobb presat fakudade såsom astrorat aska, triss, om järat.
+                      br
+                      br
+                      | Tess bloggosfär, i ovin megavis prenar, i begisk terapeutisk kloning. Nist pren såväl som vagen, plånboksbröllop. Fysisk cd trepp, förutom mymöligt trebedade födat om anteligt eska än mimys. Gardinhängarjobb presat fakudade såsom astrorat aska, triss, om järat.
+
+                .services
+
+                    a.services__block(href="#" style="background-image: url('assets/images/serv1.jpg')")
+                        p Подбор инструмента для механической обработки изделий
+
+                    a.services__block(href="#" style="background-image: url('assets/images/serv2.jpg')")
+                        p Продажа инструмента для механической обработки изделий, измерительного инструмента
+
+                    a.services__block(href="#" style="background-image: url('assets/images/serv3.jpg')")
+                        p Написание технологического процесса механической обработки изделий
+
+                    a.services__block(href="#" style="background-image: url('assets/images/serv4.jpg')")
+                        p Проведение испытаний металлорежущего инструмента
+
+                    a.services__block(href="#" style="background-image: url('assets/images/serv5.jpg')")
+                        p Инженерное сопровождение внедрения нового инструмента/технологии механической обработки изделий
     // Services::End

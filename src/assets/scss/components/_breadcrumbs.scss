@@ -4,26 +4,27 @@
 }
 
 .breadcrumbs-wrapper {
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
-    display: none;
-
-    @include breakpoint(md) {
-        display: flex;
-    }
 }
 
 .breadcrumbs-item {
     display: flex;
     align-items: center;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.35;
     text-transform: uppercase;
-    color: #BBBEC4;
 }
 
 .breadcrumbs-item:first-child {
     color: #fff;
+}
+
+.breadcrumbs-item span {
+    color: #BBBEC4;
+    cursor: default;
 }
 
 .breadcrumbs-separator {
