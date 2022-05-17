@@ -121,4 +121,44 @@ $(document).ready(function() {
         $('.services-section .swiper-button-prev, .services-section .swiper-button-next').on('click', changeNumber);
     }
 
+
+    let about_section;
+
+    if ($('.sertificates__slider').length > 0) {
+        let slides_per_view = 4;
+        about_section = new Swiper('.sertificates__slider', {
+            slidesPerView: slides_per_view,
+            slidesPerGroup: slides_per_view,
+            spaceBetween: 36,
+            pagination: {
+                el: '.certificates-section .swiper-progressbar',
+                type: 'progressbar'
+            },
+            navigation: {
+                nextEl: '.certificates-section .swiper-button-next',
+                prevEl: '.certificates-section .swiper-button-prev',
+            },
+        });
+
+        about_section.on('slideChange', function () {
+            changeNumber();
+        });
+
+        function changeNumber() {
+            let currentNumber = $('.certificates-section .current-number');
+            let lastNumber = $('.certificates-section .last-number');
+
+            currentNumber.html(addZero((about_section.realIndex / slides_per_view) +  1) + ((about_section.realIndex / slides_per_view) +  1));
+            lastNumber.html(addZero((Math.ceil(about_section.slides.length) / slides_per_view)) + (Math.ceil((about_section.slides.length) / slides_per_view)))
+        }
+
+        function addZero(num) {
+            return (num > 9) ? '' : '0';
+        }
+
+        changeNumber();
+
+        $('.certificates-section .swiper-button-prev, .certificates-section .swiper-button-next').on('click', changeNumber);
+    }
+
 });

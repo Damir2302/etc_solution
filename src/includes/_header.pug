@@ -13,15 +13,15 @@ block header
                 nav.header__navbar
                     ul.nav
                         li.nav__item
-                            a.nav__item-link(href="#") Каталог
+                            a.nav__item-link(class= page == 'catalog' ? 'active' : '' href="catalog.html") Каталог
                         li.nav__item
-                            a.nav__item-link(href="#") Компания
+                            a.nav__item-link(class= page == 'about' ? 'active' : '' href="about.html") Компания
                         li.nav__item
-                            a.nav__item-link(href="#") Услуги
+                            a.nav__item-link(class= page == 'service' ? 'active' : '' href="service.html") Услуги
                         li.nav__item
-                            a.nav__item-link(href="#") Новости
+                            a.nav__item-link(class= page == 'news' ? 'active' : '' href="news.html") Новости
                         li.nav__item
-                            a.nav__item-link(href="#") Контакты
+                            a.nav__item-link(class= page == 'contacts' ? 'active' : '' href="contacts.html") Контакты
 
                     ul.header__socials-mobile
                         li

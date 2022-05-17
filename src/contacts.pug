@@ -1,0 +1,63 @@
+---
+title: ETC - Solution | Контакты
+page: contacts
+---
+
+extends includes/_page
+
+block main
+
+    // Breadcrumbs::Start
+    include components/_breadcrumbs
+    +breadcrumbs('Контакты', 'Контакты')
+    // Breadcrumbs::End
+
+    // Contacts::Start
+    section.contacts-section
+
+        .container
+
+            .contacts__wrapper
+
+                .contacts__block
+
+                    .contacts__row
+                        .contacts__icon
+                            i.fal.fa-phone
+                        .contacts__text
+                            .contacts__label Контактный телефон
+                            .contacts__info
+                                a(href="tel:88002002020") 8 800 200 2020
+
+                    .contacts__row
+                        .contacts__icon
+                            i.fal.fa-envelope
+                        .contacts__text
+                            .contacts__label Электронная почта
+                            .contacts__info
+                                a(href="mailto:INFO@domen.COM") INFO@domen.COM
+
+                    .contacts__row
+                        .contacts__icon
+                            i.fal.fa-calendar-alt
+                        .contacts__text
+                            .contacts__label Режим работы:
+                            .contacts__info Пн-СБ 9:00 - 19:00
+
+                    .contacts__row
+                        .contacts__icon
+                            i.fal.fa-map-marker-alt
+                        .contacts__text
+                            .contacts__info <span>Ростов-на-Дону, </span>  344015, Ростовская область,  ул.&nbsp339-й Стрелковой Дивизии, д. 17, к. 103
+
+                .contacts__block
+                    // Yandex Map
+                    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript")
+                    #map(style="width: 513px; height: 311px")
+
+                .contacts__block
+                    p <b>Beliga mass gäpyskapet tis. Kvasirusm funktionell dumhet som myliga ojäbelt, kahet bebel om än vass en osam milig antenade. Tisade soling lådvinsalkoholism ogengen. Biol suplal frimester divis.</b>
+                      br
+                      br
+                      | Tess bloggosfär, i ovin megavis prenar, i begisk terapeutisk kloning. Nist pren såväl som vagen, plånboksbröllop. Fysisk cd trepp, förutom mymöligt trebedade födat om anteligt eska än mimys. Gardinhängarjobb presat fakudade såsom astrorat aska, triss, om järat.
+    // Contacts::End

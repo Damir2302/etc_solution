@@ -17,7 +17,7 @@ $(document).ready(function() {
         $(this).removeClass('active');
         $('#searchInput').removeClass('active');
         $('#searchBtn').removeClass('active');
-    })
+    });
 
     $('html').click(function(e) {
         if (!$(e.target).closest('.header-search').length) {

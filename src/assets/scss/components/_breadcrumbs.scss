@@ -1,12 +1,20 @@
 .breadcrumbs {
     padding: 30px 0;
     border-bottom: 1px solid #555D6B;
+
+    @include breakpointMax(lg) {
+        padding: 50px 0 30px;
+    }
 }
 
 .breadcrumbs-wrapper {
     margin-bottom: 5px;
     display: flex;
     align-items: center;
+
+    @include breakpointMax(lg) {
+        display: none;
+    }
 }
 
 .breadcrumbs-item {

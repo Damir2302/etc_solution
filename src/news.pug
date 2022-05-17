@@ -1,0 +1,86 @@
+---
+title: ETC - Solution | Новости
+page: news
+---
+
+extends includes/_page
+
+block main
+
+    // Breadcrumbs::Start
+    include components/_breadcrumbs
+    +breadcrumbs('Новости', 'Новости')
+    // Breadcrumbs::End
+
+    // News::Start
+    section.news-section
+
+        .container
+
+            .articles__wrapper
+
+                .articles__text
+                    p <b>Beliga mass gäpyskapet tis. Kvasirusm funktionell dumhet som myliga ojäbelt, kahet bebel om än vass en osam milig antenade. Tisade soling lådvinsalkoholism ogengen. Biol suplal frimester divis.</b>
+                      br
+                      br
+                      | Tess bloggosfär, i ovin megavis prenar, i begisk terapeutisk kloning. Nist pren såväl som vagen, plånboksbröllop. Fysisk cd trepp, förutom mymöligt trebedade födat om anteligt eska än mimys. Gardinhängarjobb presat fakudade såsom astrorat aska, triss, om järat.
+
+                    .articles__tab
+
+                        a.articles__year.active(href="#") 2022
+                        a.articles__year(href="#") 2021
+
+                .articles
+
+                    .articles__inner
+
+                        a.news__item(href="news-inner.html" style="background-image: url('assets/images/news1.jpg')")
+                            .news__item-title Контакты для связи
+                            .news__item-date 19 марта 2020
+
+                        a.news__item(href="news-inner.html" style="background-image: url('assets/images/news2.jpg')")
+                            .news__item-title Новый проект
+                            .news__item-date 19 марта 2020
+
+                        a.news__item(href="news-inner.html" style="background-image: url('assets/images/news3.jpg')")
+                            .news__item-title Скидки на все 5%
+                            .news__item-date 19 марта 2020
+
+                        a.news__item(href="news-inner.html" style="background-image: url('assets/images/news1.jpg')")
+                            .news__item-title Контакты для связи
+                            .news__item-date 19 марта 2020
+
+                        a.news__item(href="news-inner.html" style="background-image: url('assets/images/news2.jpg')")
+                            .news__item-title Новый проект
+                            .news__item-date 19 марта 2020
+
+                        a.news__item(href="news-inner.html" style="background-image: url('assets/images/news3.jpg')")
+                            .news__item-title Скидки на все 5%
+                            .news__item-date 19 марта 2020
+
+                        a.news__item(href="news-inner.html" style="background-image: url('assets/images/news1.jpg')")
+                            .news__item-title Контакты для связи
+                            .news__item-date 19 марта 2020
+
+                        a.news__item(href="news-inner.html" style="background-image: url('assets/images/news2.jpg')")
+                            .news__item-title Новый проект
+                            .news__item-date 19 марта 2020
+
+                        a.news__item(href="news-inner.html" style="background-image: url('assets/images/news3.jpg')")
+                            .news__item-title Скидки на все 5%
+                            .news__item-date 19 марта 2020
+
+                    .articles__pagination
+
+                        a.pagination-link.pagination-arrow.pagination-arrow-left(href="javascript:void(0)")
+                            i.fal.fa-chevron-left
+
+                        a.pagination-link.active(href="javascript:void(0)") 1
+                        a.pagination-link(href="javascript:void(0)") 2
+                        a.pagination-link(href="javascript:void(0)") 3
+                        a.pagination-link(href="javascript:void(0)") 4
+                        a.pagination-link(href="javascript:void(0)") 5
+
+                        a.pagination-link.pagination-arrow.pagination-arrow-right(href="javascript:void(0)")
+                            i.fal.fa-chevron-right
+    // News::End

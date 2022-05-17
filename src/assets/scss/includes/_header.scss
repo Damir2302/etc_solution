@@ -3,11 +3,22 @@
 }
 
 .header {
-    padding: 25px 0;
+    position: relative;
     background: rgba(41, 44, 49, 0.5);
     width: 100%;
     border-bottom: 1px solid #555D6B;
     z-index: 2;
+
+    @include breakpointMax(lg) {
+        padding: 25px 0;
+    }
+}
+
+.header .container {
+
+    @include breakpoint(lg) {
+        position: static;
+    }
 }
 
 .header__inner {
@@ -35,6 +46,7 @@
 }
 
 .header__navbar {
+    z-index: 10;
 
     @include breakpointMax(lg) {
         padding: 80px 40px;
@@ -77,14 +89,19 @@
 }
 
 .nav__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 101px;
 
     @include breakpointMax(lg) {
         margin-bottom: 40px;
+        display: block;
+        height: auto;
     }
 }
 
 .nav__item-link {
-    position: relative;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.375;
@@ -103,21 +120,18 @@
     }
 }
 
-.nav__item-link::after {
+.nav__item-link.active::after {
     content: '';
     background: #fff;
     position: absolute;
     left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 1px;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
     transition: width .5s ease;
-}
 
-.nav__item-link:hover::after {
-
-    @include breakpoint(lg) {
-        width: 100%;
+    @include breakpointMax(lg) {
+        content: none;
     }
 }
 
@@ -196,7 +210,14 @@
 
 .header-search {
     margin-left: 28px;
-    position: relative;
+
+    @include breakpoint(lg) {
+        position: relative;
+    }
+}
+
+.header-search form {
+    cursor: default;
 }
 
 .header-search input {
@@ -217,6 +238,12 @@
     @include breakpointMax(hd) {
         padding-left: 20px;
     }
+
+    @include breakpointMax(lg) {
+        top: 75px;
+        left: 0;
+        border-radius: 0;
+    }
 }
 
 .header-search input.active {
@@ -233,7 +260,7 @@
     }
 
     @include breakpointMax(lg) {
-        right: 30px;
+        width: 100%;
     }
 }
 
@@ -267,6 +294,10 @@
 .header-search button.search-btn {
     right: 0;
     transition: right .5s ease;
+
+    @include breakpointMax(lg) {
+        right: 15px;
+    }
 }
 
 .header-search button.search-btn.active {
@@ -277,7 +308,7 @@
     }
 
     @include breakpointMax(lg) {
-        right: 50px;
+        right: 15px;
     }
 }
 
@@ -286,16 +317,23 @@
     max-width: 0%;
     overflow: hidden;
     visibility: hidden;
-    transition: max-width .5s ease;
+    transition: max-width .5s .3s ease;
+
+    @include breakpointMax(lg) {
+        position: absolute;
+        top: 85px;
+        font-size: 24px;
+    }
+
+    @include breakpointMax(xs) {
+        position: absolute;
+        top: 88px;
+    }
 }
 
 .header-search button.close-btn.active {
     max-width: 100%;
     visibility: visible;
-
-    @include breakpointMax(lg) {
-        right: 45px;
-    }
 }
 
 .header-burger {

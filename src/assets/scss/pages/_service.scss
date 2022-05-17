@@ -2,24 +2,27 @@
     padding: 60px 0 90px;
 }
 
-.services__wrapper {
+.articles__wrapper {
     display: flex;
     column-gap: 30px;
 }
 
-.services__text {
+.articles__text {
     padding-right: 30px;
     flex-basis: 23.5%;
 }
 
-.services__text p {
+.articles__text p {
     font-weight: 300;
 }
 
-.services {
+.articles {
+    flex-basis: 75%;
+}
+
+.articles__inner {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 75%;
     column-gap: 30px;
     row-gap: 30px;
 }

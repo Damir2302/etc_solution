@@ -2,34 +2,38 @@
     padding: 60px 0 48px;
 }
 
+.service-inner__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
 .service-inner__image {
-    width: 100%;
+    flex-basis: 50%;
     max-width: 650px;
-    float: left;
 }
 
 .service-inner__image img {
     width: 100%;
 }
 
+.service-inner__content {
+    padding-right: calc(8.333% + 16px);
+    flex-basis: 50%;
+}
+
 .service-inner__content button {
-    padding: 14px 47px;
-    background: none;
-    font-weight: 400;
-    color: #fff;
-    letter-spacing: 0.2em;
-    border: 1px solid #BBBEC4;
-    border-radius: 3px;
-    text-transform: uppercase;
-    box-sizing: border-box;
+    margin-bottom: 40px;
 }
 
 .button-return {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 180px;
     border-radius: 3px;
     border: 1px solid #555D6B;
     transform: translateY(48px);
-    clear: both;
 }
 
 .button-return a {

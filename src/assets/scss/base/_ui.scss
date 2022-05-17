@@ -68,9 +68,14 @@ main {
     }
 }
 
+button {
+    position: relative;
+}
+
 .button-style {
     padding: 14px 47px;
     background: none;
+    position: relative;
     font-weight: 400;
     color: #fff;
     letter-spacing: 0.2em;
@@ -78,6 +83,34 @@ main {
     border-radius: 3px;
     text-transform: uppercase;
     box-sizing: border-box;
+}
+
+.button-style span {
+    position: relative;
+    transition: all 0.3s linear;
+    z-index: 1;
+}
+
+.button-style:hover *,
+.button-style:hover::before {
+    color: #000;
+    z-index: 1;
+}
+
+.button-style::after {
+    content: '';
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: all .3s linear;
+    z-index: 0;
+}
+
+.button-style:hover::after {
+    width: 100%;
 }
 
 .section-title {
@@ -143,7 +176,7 @@ main {
 }
 
 .swiper-button.swiper-button-disabled {
-    opacity: 1;
+    opacity: 0.3;
 }
 
 .swiper-button::after {

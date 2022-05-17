@@ -1,0 +1,36 @@
+.popup-layer
+    .popup-container
+        .popup
+            .popup-wrapper
+                a.popup-close
+                    i.fal.fa-times
+                .popup-header
+                    p Сделать заявку
+                .popup-form
+                    form#form-popup
+                        .form-col-row
+                            label(for="name") Имя*
+                            input#name(type="text" name="name" placeholder="Введите ваше имя" required)
+                        .form-col-row
+                            label(for="phone") Телефон*
+                            input#phone(type="text" name="phone" placeholder="+7" required)
+                        .form-col-row
+                            label(for="phone") E-mail*
+                            input#email(type="email" name="email" placeholder="Введите ваш E-mail" required)
+
+                        .popup-agreement
+                            input#agreement(type="checkbox", name="agreement" style="display: none" checked required)
+                            label(for="agreement")
+                            span Согласие на обработку <a href="#">персональных данных</a>
+
+                        button#submit.button-style(type="submit")
+                            span Заказать
+
+        .popup.popup-success.hide
+            .popup-wrapper
+                a.popup-close
+                    i.fal.fa-times
+                p Спасибо
+                span Мы свяжемся с вами в ближайшее время
+                a(href="javascript:void(0)").button-style
+                    span Вернуться на сайт

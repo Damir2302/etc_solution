@@ -1,0 +1,148 @@
+---
+title: ETC - Solution | Компания
+page: about
+bodyClass: about-page
+---
+
+extends includes/_page
+
+block main
+
+    // Breadcrumbs::Start
+    include components/_breadcrumbs
+    +breadcrumbs('Компания', 'Компания')
+    // Breadcrumbs::End
+
+    // About::Start
+    section.about-section
+
+        .container
+
+            .about-sec
+
+                .about-sec__main
+                    h2.section-title About
+                    p.about-sec__main-text Tess bloggosfär, i ovin megavis prenar, i begisk terapeutisk kloning. Nist pren såväl som vagen, plånboksbröllop. Fysisk cd trepp, förutom mymöligt trebedade födat om anteligt eska än mimys. Gardinhängarjobb presat fakudade såsom astrorat aska, triss, om järat.
+                      br
+                      br
+                      | Bost pavis ön vamyrat inte semide inte minas krore paramor ädina, geohet. Aföpp blinga om makronde gevasat, larol och trekiska anagt tiska spere vidat. Rerer ner sanade preck attitydinkontinens. Para kadesade shoppingspion, rotöck, monoment, sojunt, och pros halmdocka av as. Du kan vara drabbad.
+                      br
+                      br
+                      | <b>Beliga mass gäpyskapet tis. Kvasirusm funktionell dumhet som myliga ojäbelt, kahet bebel om än vass en osam milig antenade. Tisade soling lådvinsalkoholism ogengen. Biol suplal frimester divis.</b>
+
+                .about-sec__wrapper
+
+                    .about-sec__item
+                        .about-sec__img
+                            img(src="assets/images/about-sec_1.png", alt="img")
+                        .about-sec__info
+                            span.about-sec__title Ассортимент
+                            span.about-sec__text Весь спектр остнастки для механообработки
+
+                    .about-sec__item
+                        .about-sec__img
+                            img(src="assets/images/about-sec_2.png", alt="img")
+                        .about-sec__info
+                            span.about-sec__title Гарантия
+                            span.about-sec__text Вся продукция сертифицирована и имеет заводсвую гарантию
+
+                    .about-sec__item
+                        .about-sec__img
+                            img(src="assets/images/about-sec_3.png", alt="img")
+                        .about-sec__info
+                            span.about-sec__title Прямые поставки
+                            span.about-sec__text Используем прямые поставки с заводов-изготовителей
+
+                    .about-sec__item
+                        .about-sec__img
+                            img(src="assets/images/about-sec_4.png", alt="img")
+                        .about-sec__info
+                            span.about-sec__title Акции и подарки
+                            span.about-sec__text Выгода — ваш основной критерий выбора? Не меняйте привычек
+    // About::End
+
+    // Сertificates::Start
+    section.certificates-section
+
+        .container
+
+            .section-top
+
+                .section-title-wrap
+                    h2.section-title Документы
+
+                .custom-pagination
+                    .swiper-custom-pagination
+                        .swiper-btn
+                            .swiper-button-prev.swiper-button
+                                i.fal.fa-long-arrow-left(aria-hidden="true")
+                            span |
+                            .swiper-button-next.swiper-button
+                                i.fal.fa-long-arrow-right(aria-hidden="true")
+                        .slides-number
+                            span.current-number
+                            .swiper-progressbar
+                            span.last-number
+
+            .section-content
+
+                .swiper.sertificates__slider
+
+                    .swiper-wrapper
+
+                        .swiper-slide
+                            a(href="#").sertificates__item
+                                .sertificates__item-img
+                                    img(src="assets/images/doc.jpg", alt="img")
+                                .sertificates__item-title Дилерский сертификат
+                                .sertificates__item-subtitle сертификат от СКИФ-М
+
+                        .swiper-slide
+                            a(href="#").sertificates__item
+                                .sertificates__item-img
+                                    img(src="assets/images/doc.jpg", alt="img")
+                                .sertificates__item-title Дилерский сертификат
+                                .sertificates__item-subtitle сертификат от СКИФ-М
+
+                        .swiper-slide
+                            a(href="#").sertificates__item
+                                .sertificates__item-img
+                                    img(src="assets/images/doc.jpg", alt="img")
+                                .sertificates__item-title Дилерский сертификат
+                                .sertificates__item-subtitle сертификат от СКИФ-М
+
+                        .swiper-slide
+                            a(href="#").sertificates__item
+                                .sertificates__item-img
+                                    img(src="assets/images/doc.jpg", alt="img")
+                                .sertificates__item-title Дилерский сертификат
+                                .sertificates__item-subtitle сертификат от СКИФ-М
+
+                        .swiper-slide
+                            a(href="#").sertificates__item
+                                .sertificates__item-img
+                                    img(src="assets/images/doc.jpg", alt="img")
+                                .sertificates__item-title Дилерский сертификат
+                                .sertificates__item-subtitle сертификат от СКИФ-М
+
+                        .swiper-slide
+                            a(href="#").sertificates__item
+                                .sertificates__item-img
+                                    img(src="assets/images/doc.jpg", alt="img")
+                                .sertificates__item-title Дилерский сертификат
+                                .sertificates__item-subtitle сертификат от СКИФ-М
+
+                        .swiper-slide
+                            a(href="#").sertificates__item
+                                .sertificates__item-img
+                                    img(src="assets/images/doc.jpg", alt="img")
+                                .sertificates__item-title Дилерский сертификат
+                                .sertificates__item-subtitle сертификат от СКИФ-М
+
+                        .swiper-slide
+                            a(href="#").sertificates__item
+                                .sertificates__item-img
+                                    img(src="assets/images/doc.jpg", alt="img")
+                                .sertificates__item-title Дилерский сертификат
+                                .sertificates__item-subtitle сертификат от СКИФ-М
+    // Certificates::End
