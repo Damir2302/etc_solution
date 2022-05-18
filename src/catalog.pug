@@ -1,0 +1,126 @@
+---
+title: ETC - Solution | Каталог
+page: catalog
+---
+
+extends includes/_page
+
+block main
+
+    // Breadcrumbs::Start
+    include components/_breadcrumbs
+    +breadcrumbs('Каталог', 'Каталог')
+    // Breadcrumbs::End
+
+    // Catalog-section::Start
+    .catalog-section
+
+        .container
+
+            .catalog__block
+
+                // Categories::Start
+                .catalog__aside
+
+                    ul.aside__list
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Точение
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Канавка и отрезка
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Фрезерование
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Сверление
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Развертывание
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Нарезание резьбы
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Измерительный инструмент
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Вспомогательный инструмент
+                // Categories::End
+
+                // Catalog::Start
+                .catalog__inner
+
+                    p <b>Beliga mass gäpyskapet tis. Kvasirusm funktionell dumhet som myliga ojäbelt, kahet bebel om än vass en osam milig antenade. Tisade soling lådvinsalkoholism ogengen. Biol suplal frimester divis.</b>
+                      br
+                      br
+                      |Tess bloggosfär, i ovin megavis prenar, i begisk terapeutisk kloning. Nist pren såväl som vagen, plånboksbröllop. Fysisk cd trepp, förutom mymöligt trebedade födat om anteligt eska än mimys. Gardinhängarjobb presat fakudade såsom astrorat aska, triss, om järat.
+
+                    .catalog__wrapper
+
+                        a(href="category-1.html").catalog__item
+                            .catalog__picture
+                                img(src="assets/images/prod1.png", alt="img")
+                            .catalog__info
+                                span.catalog__info-title Точение
+                                span.catalog__info-qt Более <b>1 500</b> товаров
+
+                        a(href="category-1.html").catalog__item
+                            .catalog__picture
+                                img(src="assets/images/prod2.png", alt="img")
+                            .catalog__info
+                                span.catalog__info-title Канавка и отрезка
+                                span.catalog__info-qt Более <b>1 500</b> товаров
+
+                        a(href="category-1.html").catalog__item
+                            .catalog__picture
+                                img(src="assets/images/prod3.png", alt="img")
+                            .catalog__info
+                                span.catalog__info-title Фрезерование
+                                span.catalog__info-qt Более <b>1 500</b> товаров
+
+                        a(href="category-1.html").catalog__item
+                            .catalog__picture
+                                img(src="assets/images/prod4.png", alt="img")
+                            .catalog__info
+                                span.catalog__info-title Сверление
+                                span.catalog__info-qt Более <b>1 500</b> товаров
+
+                        a(href="category-1.html").catalog__item
+                            .catalog__picture
+                                img(src="assets/images/prod5.png", alt="img")
+                            .catalog__info
+                                span.catalog__info-title Развертывание
+                                span.catalog__info-qt Более <b>1 500</b> товаров
+
+                        a(href="category-1.html").catalog__item
+                            .catalog__picture
+                                img(src="assets/images/prod6.png", alt="img")
+                            .catalog__info
+                                span.catalog__info-title Нарезание резьбы
+                                span.catalog__info-qt Более <b>1 500</b> товаров
+
+                        a(href="category-1.html").catalog__item
+                            .catalog__picture
+                                img(src="assets/images/prod7.png", alt="img")
+                            .catalog__info
+                                span.catalog__info-title Измерительный инструмент
+                                span.catalog__info-qt Более <b>1 500</b> товаров
+
+                        a(href="category-1.html").catalog__item
+                            .catalog__picture
+                                img(src="assets/images/prod8.png", alt="img")
+                            .catalog__info
+                                span.catalog__info-title Вспомогательный инструмент
+                                span.catalog__info-qt Более <b>1 500</b> товаров
+                // Catalog::End
+    // Catalog-section::End

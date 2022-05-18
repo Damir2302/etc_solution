@@ -1,0 +1,31 @@
+.category-section {
+    padding: 60px 0 48px;
+}
+
+.category-section .catalog__wrapper {
+    margin: 0;
+}
+
+.category-section .catalog__item {
+    align-items: flex-start;
+    flex-basis: calc((100% - 60px) / 3);
+    column-gap: 17px;
+}
+
+.category-section .catalog__info-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.category-section .catalog__info-title:hover {
+    color: #D1D1D1;
+}
+
+.catalog__info-list li a {
+    font-size: 14px;
+    color: #D1D1D1;
+}
+
+.catalog__info-list li a:hover {
+    color: #fff;
+}

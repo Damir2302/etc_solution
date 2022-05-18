@@ -1,0 +1,105 @@
+---
+title: ETC - Solution | Фрезерование
+page: catalog
+---
+
+extends includes/_page
+
+block main
+
+    // Breadcrumbs::Start
+    include components/_breadcrumbs
+    +breadcrumbs('Каталог', 'Каталог', 'Фрезерование')
+    // Breadcrumbs::End
+
+    // Category::Start
+    .category-section
+
+        .container
+
+            .catalog__block
+
+                // Categories::Start
+                .catalog__aside
+
+                    ul.aside__list
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Точение
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Канавка и отрезка
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Фрезерование
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Сверление
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Развертывание
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Нарезание резьбы
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Измерительный инструмент
+
+                        li.aside__list-item
+                            a.aside__list-link(href="#")
+                                span Вспомогательный инструмент
+                    // Categories::End
+
+                // Catalog::Start
+                .catalog__inner
+
+                    .catalog__wrapper
+
+                        .catalog__item
+                            a.catalog__picture(href="category-2.html")
+                                img(src="assets/images/cat1.png", alt="img")
+                            .catalog__info
+                                a.catalog__info-title(href="category-2.html") Фрезы со сменными пластинами
+                                ul.catalog__info-list
+                                    li
+                                        a(href="category-3.html") Фрезерование плоскости
+                                    li
+                                        a(href="category-3.html") Фрезерование уступов
+                                    li
+                                        a(href="category-3.html") Профильное фрезерование
+                                    li
+                                        a(href="category-3.html") Фрезерование с быстрыми подачами
+                                    li
+                                        a(href="category-3.html") Фрезерование пазов и отрезка
+                                    li
+                                        a(href="category-3.html") Обработка фасок
+
+                        .catalog__item
+                            a.catalog__picture(href="category-2.html")
+                                img(src="assets/images/cat2.png", alt="img")
+                            .catalog__info
+                                a.catalog__info-title(href="category-2.html") Монолитные твердосплавные фрезы
+                                ul.catalog__info-list
+                                    li
+                                        a(href="category-3.html") Для материалов группы Р, М, К
+                                    li
+                                        a(href="category-3.html") Для материалов группы N
+                                    li
+                                        a(href="category-3.html") Для материалов группы S
+                                    li
+                                        a(href="category-3.html") Для обработки фасок и радиусов
+
+                        .catalog__item
+                            a.catalog__picture(href="category-2.html")
+                                img(src="assets/images/cat3.png", alt="img")
+                            .catalog__info
+                                a.catalog__info-title(href="category-2.html") Твердосплавные пластины
+                // Catalog::End
+    // Category::End

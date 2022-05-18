@@ -64,6 +64,10 @@
     border-radius: 3px;
 }
 
+.catalog__item:hover .catalog__picture img {
+    transform: scale(0.8);
+}
+
 .catalog__picture {
     background: #292C31;
     min-width: 107px;
@@ -71,6 +75,10 @@
     max-width: 107px;
     max-height: 107px;
     border-radius: 3px;
+}
+
+.catalog__picture img {
+    transition: transform .3s ease;
 }
 
 .catalog__info {
@@ -88,6 +96,10 @@
 .catalog__info-qt {
     margin-top: 5px;
     color: #D3D3D3;
+}
+
+.catalog__info-qt b {
+    color: #fff;
 }
 
 .about-section {

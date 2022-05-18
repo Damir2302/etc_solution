@@ -26,29 +26,29 @@ block header
                     ul.header__socials-mobile
                         li
                             a.header__social-link(href="vk.com")
-                                i.fab.fa-vk(aria-hidden="true")
+                                i.fab.fa-vk
                         li
                             a.header__social-link(href="youtube.com")
-                                i.fab.fa-youtube(aria-hidden="true")
+                                i.fab.fa-youtube
 
                     ul.header__phone-mobile
                         li
-                            i.far.fa-phone(aria-hidden="true")
+                            i.far.fa-phone
                             a(href="tel:88002002020") 8 800 200 2020
 
                 .header__action
 
                     .header-phone
-                        i.far.fa-phone(aria-hidden="true")
+                        i.far.fa-phone
                         a(href="tel:88002002020") 8 800 200 2020
 
                     .header-search
                         form
                             input#searchInput(type="search" name="search" placeholder="Поиск" autocomplete="off")
-                            button#searchBtn.search-btn
-                                .far.fa-search(aria-hidden="true")
-                            button#closeInput.close-btn
-                                .far.fa-times(aria-hidden="true")
+                            button#searchBtn.search-btn(aria-label="Close")
+                                i.far.fa-search
+                            button#closeInput.close-btn(aria-label="Close")
+                                i.far.fa-times
 
                     .header-burger
                         .icon-burger#burgerBtn

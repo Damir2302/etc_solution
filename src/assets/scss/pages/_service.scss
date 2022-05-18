@@ -51,15 +51,8 @@
     position: absolute;
     left: 17px;
     bottom: 20px;
-    display: -webkit-box;
-    display: box;
-    max-height: 100px;
+    max-height: 90px;
     font-weight: 600;
     line-height: 1.4;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    -webkit-box-orient: vertical;
-    box-orient: vertical;
-    text-overflow: ellipsis;
     overflow: hidden;
 }
