@@ -1,6 +1,7 @@
 ---
 title: ETC - Solution | Фрезерование
 page: catalog
+aside_active: true
 ---
 
 extends includes/_page
@@ -9,7 +10,7 @@ block main
 
     // Breadcrumbs::Start
     include components/_breadcrumbs
-    +breadcrumbs('Каталог', 'Каталог', 'Фрезерование')
+    +breadcrumbs('Фрезерование', 'Каталог', 'Фрезерование')
     // Breadcrumbs::End
 
     // Category::Start
@@ -20,42 +21,8 @@ block main
             .catalog__block
 
                 // Categories::Start
-                .catalog__aside
-
-                    ul.aside__list
-
-                        li.aside__list-item
-                            a.aside__list-link(href="#")
-                                span Точение
-
-                        li.aside__list-item
-                            a.aside__list-link(href="#")
-                                span Канавка и отрезка
-
-                        li.aside__list-item
-                            a.aside__list-link(href="#")
-                                span Фрезерование
-
-                        li.aside__list-item
-                            a.aside__list-link(href="#")
-                                span Сверление
-
-                        li.aside__list-item
-                            a.aside__list-link(href="#")
-                                span Развертывание
-
-                        li.aside__list-item
-                            a.aside__list-link(href="#")
-                                span Нарезание резьбы
-
-                        li.aside__list-item
-                            a.aside__list-link(href="#")
-                                span Измерительный инструмент
-
-                        li.aside__list-item
-                            a.aside__list-link(href="#")
-                                span Вспомогательный инструмент
-                    // Categories::End
+                include components/_categories
+                // Categories::End
 
                 // Catalog::Start
                 .catalog__inner

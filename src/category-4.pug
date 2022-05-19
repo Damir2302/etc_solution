@@ -1,0 +1,46 @@
+---
+title: ETC - Solution | Фрезерование
+page: catalog
+aside_active: true
+level: 3
+---
+
+extends includes/_page
+
+block main
+
+    // Breadcrumbs::Start
+    include components/_breadcrumbs
+    +breadcrumbs('Каталог', 'Каталог', 'Фрезерование')
+    // Breadcrumbs::End
+
+    // Category::Start
+    .category-section
+
+        .container
+
+            .catalog__block
+
+                // Categories::Start
+                include components/_categories
+                // Categories::End
+
+                // Catalog::Start
+                .catalog__inner
+
+                    .catalog__wrapper
+
+                        .catalog__item
+                            a.catalog__picture(href="category-3.html")
+                                img(src="assets/images/cats1.png", alt="img")
+                            .catalog__info
+                                a.catalog__info-title(href="category-3.html") Фрезерование плоскости
+                                ul.catalog__info-list
+                                    li
+                                        a(href="category-4.html") Общего назначения
+                                    li
+                                        a(href="category-4.html") Тяжелого резания и черновой обработки
+                                    li
+                                        a(href="category-4.html") Кассетного исполнения
+                // Catalog::End
+    // Category::End

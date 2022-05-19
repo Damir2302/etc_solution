@@ -1,0 +1,64 @@
+.catalog__aside
+
+    ul.aside__list
+
+        li.aside__list-item
+            a.aside__list-link(href="#")
+                span Точение
+
+        li.aside__list-item
+            a.aside__list-link(href="#")
+                span Канавка и отрезка
+
+        li.aside__list-item(class= aside_active == true ? 'active' : '')
+            a.aside__list-link(href="#")
+                span Фрезерование
+
+            ul.aside__sublist.aside__sublist--level-1
+                li(class= level == 1 || level == 2 || level == 3 ? 'active' : '')
+                    a(href="#") Фрезы со сменными пластинами
+                    ul.aside__sublist.aside__sublist--level-2
+                        li(class= level == 2 || level == 3 ? 'active' : '')
+                            a(href="#") Фрезерование плоскости
+                            ul.aside__sublist.aside__sublist--level-3
+                                li(class= level == 3 ? 'active' : '')
+                                    a(href="#") Общего назначения
+                                li
+                                    a(href="#") Тяжелого резания и черновой обработки
+                                li
+                                    a(href="#")  Кассетного исполнения
+                        li
+                            a(href="#") Фрезерование уступов
+                        li
+                            a(href="#") Профильное фрезерование
+                        li
+                            a(href="#") Фрезерование с быстрыми подачами
+                        li
+                            a(href="#") Фрезерование пазов и отрезка
+                        li
+                            a(href="#") Обработка фасок
+                li
+                    a(href="#") Монолитные твердосплавные фрезы
+                li
+                    a(href="#") Твердосплавные пластины
+
+
+        li.aside__list-item
+            a.aside__list-link(href="#")
+                span Сверление
+
+        li.aside__list-item
+            a.aside__list-link(href="#")
+                span Развертывание
+
+        li.aside__list-item
+            a.aside__list-link(href="#")
+                span Нарезание резьбы
+
+        li.aside__list-item
+            a.aside__list-link(href="#")
+                span Измерительный инструмент
+
+        li.aside__list-item
+            a.aside__list-link(href="#")
+                span Вспомогательный инструмент
