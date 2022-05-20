@@ -54,33 +54,4 @@ $(document).ready(function() {
 
     }
 
-
-
-
-
-const container = document.querySelector('.slide-container')
-const slides = document.querySelector('.slides')
-
-const containerRect = container.getBoundingClientRect()
-const slideRect = slides.getBoundingClientRect()
-
-const containerTop = containerRect.top
-const containerHeight = containerRect.height
-const slideWidth = slideRect.width
-
-const scrollDistance = containerHeight - window.innerHeight
-const slideDistance = slideWidth - window.innerWidth
-
-const getProgress = (start, distance, scroll) => {
-  return Math.min(1, Math.max(0, (scroll - start) / distance))
-}
-
-const handleScroll = () => {
-  const scrollPos = window.scrollY
-  const progress = getProgress(containerTop, scrollDistance, scrollPos)
-
-  slides.style.transform = `translateX(-${slideDistance * progress}px)`
-}
-
-window.addEventListener('scroll', handleScroll)
 });

@@ -1,5 +1,5 @@
 ---
-title: ETC - Solution | Фрезерование
+title: ETC - Solution | Фрезерование плоскости
 page: catalog
 aside_active: true
 level: 2
@@ -11,7 +11,7 @@ block main
 
     // Breadcrumbs::Start
     include components/_breadcrumbs
-    +breadcrumbs('Каталог', 'Каталог', 'Фрезерование')
+    +breadcrumbs('Фрезерование плоскости', 'Каталог', 'Фрезерование', 'Фрезы со сменными пластинами', 'Фрезерование плоскости')
     // Breadcrumbs::End
 
     // Category::Start
@@ -30,17 +30,58 @@ block main
 
                     .catalog__wrapper
 
+                        // Catalog item
                         .catalog__item
-                            a.catalog__picture(href="category-3.html")
+                            a.catalog__picture(href="category-4.html")
+                                img(src="assets/images/cats2.png", alt="img")
+                            .catalog__info
+                                a.catalog__info-title(href="category-4.html") Общего назначения
+                                .catalog__text
+                                    .catalog__item-text
+                                        span Рабочий диаметр от 32 до 315 мм
+                                        span Глубина обработки до 7 мм
+                                    ul
+                                        li.catalog__item-img
+                                            img(src="assets/images/item1.png", alt="img")
+                                        li.catalog__item-img
+                                            img(src="assets/images/item2.png", alt="img")
+                                        li.catalog__item-img
+                                            img(src="assets/images/item3.png", alt="img")
+
+                        // Catalog item
+                        .catalog__item
+                            a.catalog__picture(href="category-4.html")
+                                img(src="assets/images/cats3.png", alt="img")
+                            .catalog__info
+                                a.catalog__info-title(href="category-4.html") Тяжелого резания и черновой обработки
+                                .catalog__text
+                                    .catalog__item-text
+                                        span Рабочий диаметр от 32 до 315 мм
+                                        span Глубина обработки до 7 мм
+                                    ul
+                                        li.catalog__item-img
+                                            img(src="assets/images/item1.png", alt="img")
+                                        li.catalog__item-img
+                                            img(src="assets/images/item2.png", alt="img")
+                                        li.catalog__item-img
+                                            img(src="assets/images/item3.png", alt="img")
+
+                        // Catalog item
+                        .catalog__item
+                            a.catalog__picture(href="category-4.html")
                                 img(src="assets/images/cats1.png", alt="img")
                             .catalog__info
-                                a.catalog__info-title(href="category-3.html") Фрезерование плоскости
-                                ul.catalog__info-list
-                                    li
-                                        a(href="category-4.html") Общего назначения
-                                    li
-                                        a(href="category-4.html") Тяжелого резания и черновой обработки
-                                    li
-                                        a(href="category-4.html") Кассетного исполнения
+                                a.catalog__info-title(href="category-4.html") Кассетного исполнения
+                                .catalog__text
+                                    .catalog__item-text
+                                        span Рабочий диаметр от 32 до 315 мм
+                                        span Глубина обработки до 7 мм
+                                    ul
+                                        li.catalog__item-img
+                                            img(src="assets/images/item1.png", alt="img")
+                                        li.catalog__item-img
+                                            img(src="assets/images/item2.png", alt="img")
+                                        li.catalog__item-img
+                                            img(src="assets/images/item3.png", alt="img")
                 // Catalog::End
     // Category::End

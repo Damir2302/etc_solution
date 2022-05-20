@@ -1,0 +1,33 @@
+- var list = [lis]
+AA
+mixin card(a_link, a_link2, img_link, title, lis)
+
+    .catalog__item
+        a.catalog__picture(href= a_link)
+            img(src="assets/images/" + img_link, alt="img")
+        .catalog__info
+            a.catalog__info-title(href= a_link)= title
+            ul.catalog__info-list
+
+                each link in links
+
+                    li
+                        a(href= a_link2)= link
+
+            .catalog__text
+                .catalog__item-text
+                    span Рабочий диаметр от 16 до 125 мм
+                    span Глубина обработки до 2 мм
+                ul
+                    li.catalog__item-img
+                        img(src="assets/images/" + img_link2, alt="img")
+                    li.catalog__item-img
+                        img(src="assets/images/" + img_link2, alt="img")
+                    li.catalog__item-img
+                        img(src="assets/images/" + img_link2, alt="img")
+                    li.catalog__item-img
+                        img(src="assets/images/" + img_link2, alt="img")
+                    li.catalog__item-img
+                        img(src="assets/images/" + img_link2, alt="img")
+                    li.catalog__item-img
+                        img(src="assets/images/" + img_link2, alt="img")

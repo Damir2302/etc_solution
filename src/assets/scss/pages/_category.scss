@@ -29,3 +29,17 @@
 .catalog__info-list li a:hover {
     color: #fff;
 }
+
+.catalog__item-text {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #D1D1D1;
+    cursor: default;
+}
+
+.catalog__item-img {
+    margin-top: 15px;
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+}
