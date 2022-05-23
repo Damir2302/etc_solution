@@ -11,7 +11,7 @@ block main
 
     // Breadcrumbs::Start
     include components/_breadcrumbs
-    +breadcrumbs('Каталог', 'Каталог', 'Фрезерование')
+    +breadcrumbs('Каталог', 'Каталог', 'Фрезерование', 'Фрезы со сменными пластинами', ' Фрезерование плоскости', 'Общего назначения')
     // Breadcrumbs::End
 
     // Category::Start
@@ -28,19 +28,241 @@ block main
                 // Catalog::Start
                 .catalog__inner
 
-                    .catalog__wrapper
+                    // Sorting
+                    .catalog__sorting
 
-                        .catalog__item
-                            a.catalog__picture(href="category-3.html")
-                                img(src="assets/images/cats1.png", alt="img")
-                            .catalog__info
-                                a.catalog__info-title(href="category-3.html") Фрезерование плоскости
-                                ul.catalog__info-list
-                                    li
-                                        a(href="category-4.html") Общего назначения
-                                    li
-                                        a(href="category-4.html") Тяжелого резания и черновой обработки
-                                    li
-                                        a(href="category-4.html") Кассетного исполнения
+                        .sort__label Сортировка
+                        select.sort__select
+                            option(selected="selected") По наименованию (А-Я)
+                            option По наименованию (Я-А)
+
+                    .catalog__table
+
+                        // Catalog row-item
+                        .catalog__row
+                            .catalog__row-item
+                                a.item-image(href="item.html")
+                                    img(src="assets/images/cat-item-1.png", alt="img")
+                                a.item-label(href="item.html") MT245-032A16R03SO12
+
+                            .catalog__row-block
+                                .item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+                                .item-button
+                                    a.button-style(href="item.html")
+                                        span Подробнее
+
+                        // Catalog row-item
+                        .catalog__row
+                            .catalog__row-item
+                                a.item-image(href="item.html")
+                                    img(src="assets/images/cat-item-1.png", alt="img")
+                                a.item-label(href="item.html") MT245-032A16R03SO12
+
+                            .catalog__row-block
+                                .item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+                                .item-button
+                                    a.button-style(href="item.html")
+                                        span Подробнее
+
+                        // Catalog row-item
+                        .catalog__row
+                            .catalog__row-item
+                                a.item-image(href="item.html")
+                                    img(src="assets/images/cat-item-1.png", alt="img")
+                                a.item-label(href="item.html") MT245-032A16R03SO12
+
+                            .catalog__row-block
+                                .item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+                                .item-button
+                                    a.button-style(href="item.html")
+                                        span Подробнее
+
+                        // Catalog row-item
+                        .catalog__row
+                            .catalog__row-item
+                                a.item-image(href="item.html")
+                                    img(src="assets/images/cat-item-1.png", alt="img")
+                                a.item-label(href="item.html") MT245-032A16R03SO12
+
+                            .catalog__row-block
+                                .item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+                                .item-button
+                                    a.button-style(href="item.html")
+                                        span Подробнее
+
+                        // Catalog row-item
+                        .catalog__row
+                            .catalog__row-item
+                                a.item-image(href="item.html")
+                                    img(src="assets/images/cat-item-1.png", alt="img")
+                                a.item-label(href="item.html") MT245-032A16R03SO12
+
+                            .catalog__row-block
+                                .item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+                                .item-button
+                                    a.button-style(href="item.html")
+                                        span Подробнее
+
+                        // Catalog row-item
+                        .catalog__row
+                            .catalog__row-item
+                                a.item-image(href="item.html")
+                                    img(src="assets/images/cat-item-1.png", alt="img")
+                                a.item-label(href="item.html") MT245-032A16R03SO12
+
+                            .catalog__row-block
+                                .item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+                                .item-button
+                                    a.button-style(href="item.html")
+                                        span Подробнее
+
+                        // Catalog row-item
+                        .catalog__row
+                            .catalog__row-item
+                                a.item-image(href="item.html")
+                                    img(src="assets/images/cat-item-1.png", alt="img")
+                                a.item-label(href="item.html") MT245-032A16R03SO12
+
+                            .catalog__row-block
+                                .item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+                                .item-button
+                                    a.button-style(href="item.html")
+                                        span Подробнее
+
+                        // Catalog row-item
+                        .catalog__row
+                            .catalog__row-item
+                                a.item-image(href="item.html")
+                                    img(src="assets/images/cat-item-1.png", alt="img")
+                                a.item-label(href="item.html") MT245-032A16R03SO12
+
+                            .catalog__row-block
+                                .item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+                                .item-button
+                                    a.button-style(href="item.html")
+                                        span Подробнее
+
+                        // Catalog row-item
+                        .catalog__row
+                            .catalog__row-item
+                                a.item-image(href="item.html")
+                                    img(src="assets/images/cat-item-1.png", alt="img")
+                                a.item-label(href="item.html") MT245-032A16R03SO12
+
+                            .catalog__row-block
+                                .item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+                                .item-button
+                                    a.button-style(href="item.html")
+                                        span Подробнее
+
+                        // Catalog row-item
+                        .catalog__row
+                            .catalog__row-item
+                                a.item-image(href="item.html")
+                                    img(src="assets/images/cat-item-1.png", alt="img")
+                                a.item-label(href="item.html") MT245-032A16R03SO12
+
+                            .catalog__row-block
+                                .item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+                                .item-button
+                                    a.button-style(href="item.html")
+                                        span Подробнее
+
+                        // Catalog row-item
+                        .catalog__row
+                            .catalog__row-item
+                                a.item-image(href="item.html")
+                                    img(src="assets/images/cat-item-1.png", alt="img")
+                                a.item-label(href="item.html") MT245-032A16R03SO12
+
+                            .catalog__row-block
+                                .item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+                                .item-button
+                                    a.button-style(href="item.html")
+                                        span Подробнее
+
+                        // Catalog row-item
+                        .catalog__row
+                            .catalog__row-item
+                                a.item-image(href="item.html")
+                                    img(src="assets/images/cat-item-1.png", alt="img")
+                                a.item-label(href="item.html") MT245-032A16R03SO12
+
+                            .catalog__row-block
+                                .item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+                                .item-button
+                                    a.button-style(href="item.html")
+                                        span Подробнее
+
+                        // Catalog row-item
+                        .catalog__row
+                            .catalog__row-item
+                                a.item-image(href="item.html")
+                                    img(src="assets/images/cat-item-1.png", alt="img")
+                                a.item-label(href="item.html") MT245-032A16R03SO12
+
+                            .catalog__row-block
+                                .item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+                                .item-button
+                                    a.button-style(href="item.html")
+                                        span Подробнее
+
+                        // Catalog row-item
+                        .catalog__row
+                            .catalog__row-item
+                                a.item-image(href="item.html")
+                                    img(src="assets/images/cat-item-1.png", alt="img")
+                                a.item-label(href="item.html") MT245-032A16R03SO12
+
+                            .catalog__row-block
+                                .item-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+                                .item-button
+                                    a.button-style(href="item.html")
+                                        span Подробнее
+
+                    // Pagination
+                    .pagination
+
+                        a.pagination-link.pagination-arrow.pagination-arrow-left(href="javascript:void(0)")
+                            i.fal.fa-chevron-left
+
+                        a.pagination-link.active(href="javascript:void(0)") 1
+                        a.pagination-link(href="javascript:void(0)") 2
+                        a.pagination-link(href="javascript:void(0)") 3
+                        a.pagination-link(href="javascript:void(0)") 4
+                        a.pagination-link(href="javascript:void(0)") 5
+
+                        a.pagination-link.pagination-arrow.pagination-arrow-right(href="javascript:void(0)")
+                            i.fal.fa-chevron-right
+
+
                 // Catalog::End
     // Category::End

@@ -62,3 +62,165 @@
         li.aside__list-item
             a.aside__list-link(href="#")
                 span Вспомогательный инструмент
+
+    // FILTERS
+    .aside__filters
+
+        p.filters__head Фильтр по параметрам
+
+        //  Filter item
+        .aside__filter
+            .filter__title
+                span Угол в плане, °
+            ul
+                li.filter__checkbox
+                    input#item1(type="checkbox", name="" aria-hidden="true")
+                    label.filter-label(for="item1") 45 (68)
+
+                li.filter__checkbox
+                    input#item2(type="checkbox", name="" aria-hidden="true")
+                    label.filter-label(for="item2") 50 (15)
+
+        //  Filter item
+        .aside__filter
+            .filter__title
+                span Минимальный размер, мм
+
+            .filter__input
+                input.input-min(type="number")
+                span —
+                input.input-max(type="number")
+
+            .slider-value
+                span.value-min
+                span.value-max
+            .filterSlider
+
+        //  Filter item
+        .aside__filter
+            .filter__title
+                span Макс. глубина резания, мм
+
+            .filter__input
+                input.input-min(type="number")
+                span —
+                input.input-max(type="number")
+
+            .slider-value
+                span.value-min
+                span.value-max
+            .filterSlider
+
+        //  Filter item
+        .aside__filter
+            .filter__title
+                span Число зубъев, шт
+            .filter__input
+                input.input-min(type="number")
+                span —
+                input.input-max(type="number")
+
+            .slider-value
+                span.value-min
+                span.value-max
+            .filterSlider
+
+        //  Filter item
+        .aside__filter
+            .filter__title
+                span Форма крепежной части
+            ul.filter__checkbox
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") A - насадное фланцевое исполнение формы А, паз по DIN 138 (28)
+
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") B - насадное фланцевое исполнение формы B, паз по DIN 138 (12)
+
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") C - насадное фланцевое исполнение формы C, паз по DIN 138 (19)
+
+        //  Filter item
+        .aside__filter
+            .filter__title
+                span Размер крепежной части
+            ul.filter__checkbox
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") 22 (11)
+
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") 27 (11)
+
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") 32 (11)
+
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") 40 (18)
+
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") 60 (10)
+
+        //  Filter item
+        .aside__filter
+            .filter__title
+                span Типоразмер пластины
+            ul.filter__checkbox
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") SD08 (8)
+
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") SN13 (21)
+
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") SO12 (10)
+
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") SO09 (8)
+
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") XN10 (14)
+
+        //  Filter item
+        .aside__filter
+            .filter__title
+                span Для аэрокосмической промышленности
+            ul.filter__checkbox
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") Да (8)
+
+        //  Filter item
+        .aside__filter
+            .filter__title
+                span Для титановых сплавов
+            ul.filter__checkbox
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") Да (8)
+
+        //  Filter item
+        .aside__filter
+            .filter__title
+                span Направление резания
+            ul.filter__checkbox
+                li.filter-checkbox
+                    input(type="checkbox", name="")
+                    label.filter-label(for="") R - правое (61)
+
+    .aside__action
+        button.aside__btn-showmore.button-style Показать
+        button.aside__btn-reset
+            i.fal.fa-sync
+            span Сбросить
