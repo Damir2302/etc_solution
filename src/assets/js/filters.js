@@ -25,15 +25,14 @@ $(document).ready(function() {
 
             // При вводе значения MIN, перемещаем ползунок
             $this.parent().find( ".input-min" ).on( "input", function() {
-                $(".filterSlider").slider( "values", [ $(this).val(),  $(".input-max").val() ] );
-                $(".value-min").text($(".filterSlider").slider("values", 0));
-                console.log('sd')
+                $this.slider( "values", [ $(this).val(),  $this.parent().find(".input-max").val() ] );
+                $this.parent().find(".value-min").text($this.slider("values", 0));
             });
 
             // При вводе значения MAX, перемещаем ползунок
-            $( ".input-max" ).on( "input", function() {
-                $(".filterSlider").slider( "values", [ $(".input-min").val(), $(this).val() ] );
-                $(".value-max").text($(".filterSlider").slider("values", 1));
+            $this.parent().find( ".input-max" ).on( "input", function() {
+                $this.slider( "values", [ $this.parent().find(".input-min").val(), $(this).val() ] );
+                $this.parent().find(".value-max").text($this.slider("values", 1));
             });
 
             // Устанавливаем начальное значение поля MIN
@@ -48,15 +47,10 @@ $(document).ready(function() {
         });
     }
 
-    // $('.aside__filter').on('click', function() {
-    //     $(this).find('ul[class^=filter__], .filter__price').slideToggle();
-    //     $(this).toggleClass('opened');
-    // });
 
-    // $('.mobile__filter-btn').on('click', function() {
-    //     $('.aside__block').addClass('opened');
-    //     $('body').addClass('menu-layer');
-    //     $('.aside-menu-layer').addClass('active');
-    // });
+    $('.filter__title').on('click', function() {
+        $(this).parent().toggleClass('active');
+        $(this).parent().find('.filter__wrapper').slideToggle();
+    });
 
 });

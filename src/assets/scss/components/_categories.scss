@@ -125,10 +125,27 @@
 .filter__title::after {
     content: '\f077';
     font-family: $icon;
+    transition: transform .5s ease;
+}
+
+.aside__filter.active .filter__title::after {
+    transform: rotate(180deg);
 }
 
 .filter__title span {
     max-width: 305px;
+}
+
+.filter__wrapper {
+    display: none;
+}
+
+.aside__filter:nth-child(2) .filter__wrapper {
+    display: block;
+}
+
+.aside__filter:nth-child(3) .filter__wrapper {
+    display: block;
 }
 
 .filter__checkbox {
@@ -142,6 +159,7 @@
 .filter-label {
     display: flex;
     align-items: center;
+    max-width: 290px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.4;
@@ -155,9 +173,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
     font-family: $icon;
+    font-size: 0;
     color: #353A43;
     border: 1px solid #555D6B;
     border-radius: 3px;
@@ -170,6 +191,7 @@
 
 .filter__checkbox input:checked + .filter-label::before  {
     background: #FFFFFF;
+    font-size: 14px;
     border-color: #fff;
 }
 
@@ -201,6 +223,7 @@
 
 .filterSlider {
     margin: 0 auto;
+    margin-bottom: 6px;
     height: 3px;
     max-width: 325px;
 }
@@ -215,4 +238,30 @@
 .filterSlider .ui-state-active {
     background: #999;
     border: none;
+}
+
+.aside__action {
+    padding: 15px;
+    background: #3A3E47;
+    text-align: center;
+    border: 1px solid #555D6B;
+    border-radius: 0px 0px 3px 3px;
+}
+
+.aside__btn-showmore {
+    background: #fff;
+    color: #222222;
+}
+
+.aside__btn-showmore::after {
+    background: #3A3E47;
+    color: #fff;
+}
+
+.aside__btn-showmore:hover span {
+    color: #fff;
+}
+
+.aside__btn-reset {
+    margin-top: 17px;
 }
