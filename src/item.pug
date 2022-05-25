@@ -28,7 +28,293 @@ block main
                 // Catalog::Start
                 .catalog__inner
 
+                    .product
+
+                        // Slider
+                        .product__image
+
+                            .swiper.swiper-item-pagination
+
+                                .product__container.swiper-wrapper
+
+                                    .swiper-slide
+                                        .product__block
+                                            img(src="assets/images/item1.jpg", alt="img")
+
+                                    .swiper-slide
+                                        .product__block
+                                            img(src="assets/images/item2.2.png", alt="img")
+
+                                    .swiper-slide
+                                        .product__block
+                                            img(src="assets/images/item1.jpg", alt="img")
+
+                                    .swiper-slide
+                                        .product__block
+                                            img(src="assets/images/item2.2.png", alt="img")
+
+                                    .swiper-slide
+                                        .product__block
+                                            img(src="assets/images/item1.jpg", alt="img")
 
 
+                            .swiper.swiper-item
+
+                                .product__container.swiper-wrapper
+
+                                    .swiper-slide
+                                        .product__block
+                                            img(src="assets/images/item1.jpg", alt="img")
+
+                                    .swiper-slide
+                                        .product__block
+                                            img(src="assets/images/item2.2.png", alt="img")
+
+                                    .swiper-slide
+                                        .product__block
+                                            img(src="assets/images/item1.jpg", alt="img")
+
+                                    .swiper-slide
+                                        .product__block
+                                            img(src="assets/images/item2.2.png", alt="img")
+
+                                    .swiper-slide
+                                        .product__block
+                                            img(src="assets/images/item1.jpg", alt="img")
+
+                        .product__desc
+
+                            h4 Торцовая фреза 45°
+
+                            span Основные размеры, мм:
+
+                            table
+                                tbody
+                                    tr
+                                        th D
+                                        th D1
+                                        th a
+                                        th L
+                                        th H
+                                        th d
+                                    tr
+                                        td 32
+                                        td 46
+                                        td 6
+                                        td 19
+                                        td 40
+                                        td 16
+
+                            p Возможно исполнение с внутренними каналами для подачи СОЖ к режущим кромкам.
+                              br
+                              br
+                              |С внутренней подачей СОЖ маркировка фрез с диаметром 32-125 мм будет иметь вид MT245...A...SO12-IK.
+                              br
+                              br
+                              |Фреза диаметром 160 мм с внутренней подачей СОЖ маркируется - МТ245-160С40...SO12-IK.
+
+                            p(style="color: #BBBEC4") Иллюстрации не являются точным изображением продукции, см. описание и характеристики инструмента
+
+
+                            .product__desc-bottom
+
+                                .product__desc-price
+                                    span.old-price 15 000 р.
+                                    span.actual-price 5 000 р.
+
+                                .product__desc-button
+                                    button.button-style
+                                        span Заказать
+
+                    .features
+
+                        .features__tables
+
+                            .features__char
+
+                                h4 Характеристики
+
+                                table
+                                    tbody
+                                        tr
+                                            td.cell-name Серия
+                                            td.cell-value MT245
+                                        tr
+                                            td.cell-name Угол в плане, °
+                                            td.cell-value 45
+                                        tr
+                                            td.cell-name Номинальный диаметр, мм
+                                            td.cell-value 32
+                                        tr
+                                            td.cell-name Макс. глубина резания, мм
+                                            td.cell-value 6
+                                        tr
+                                            td.cell-name Число зубъев, шт
+                                            td.cell-value 3
+                                        tr
+                                            td.cell-name Форма крепежной части
+                                            td.cell-value A - насадное фланцевое исполнение формы А, паз по DIN 138
+                                        tr
+                                            td.cell-name Размер крепежной части
+                                            td.cell-value 16
+                                        tr
+                                            td.cell-name Типоразмер пластины
+                                            td.cell-value SO12
+                                        tr
+                                            td.cell-name Число режущих элементов, шт
+                                            td.cell-value 3
+                                        tr
+                                            td.cell-name Каналы для подачи СОЖ
+                                            td.cell-value Да
+                                        tr
+                                            td.cell-name Макс. скорость вращения, об/мин
+                                            td.cell-value 21000
+                                        tr
+                                            td.cell-name Масса, кг
+                                            td.cell-value 0.1
+                                        tr
+                                            td.cell-name Направление резания
+                                            td.cell-value R - правое
+
+                            .features__tools
+
+                                h4 Комплектующие
+
+                                table
+                                    tbody
+                                        tr
+                                            td.cell-img
+                                                img(src="assets/images/table1.png", alt="img")
+                                            td.cell-name Винт крепления пластины
+                                            td.cell-value T401160-15P
+
+                                        tr
+                                            td.cell-img
+                                                img(src="assets/images/table2.png", alt="img")
+                                            td.cell-name Ключ крепления пластины
+                                            td.cell-value 7015-TP (5.5 Нм)
+
+                            .button-return
+                                a.button-style(href="#")
+                                    span Назад к списку
+
+                        .features__equipment
+
+                            h4 Доступные пластины
+
+                            span.in-stock — складская продукция. Заказ в любом количестве.
+                            span.in-stock.in-stock--reverse — производственная программа. Минимальный заказ - 200 пластин.
+
+                            .equipment__images
+
+                                ul
+                                    li
+                                        img(src="assets/images/a1.png", alt="img")
+                                    li
+                                        img(src="assets/images/a2.png", alt="img")
+                                    li
+                                        img(src="assets/images/a3.png", alt="img")
+                                    li
+                                        img(src="assets/images/a4.png", alt="img")
+                                    li
+                                        img(src="assets/images/a5.png", alt="img")
+
+                            table.table-insert
+                                thead
+                                    tr.table-insert__group-row.material-group__blue
+                                        td.table-insert__plug-left(rowspan="5")
+                                        td.table-insert__group-cell
+                                            span.table-insert__title-group P
+                                        td.table-insert__group-cell(data-alloy="HCP30X") ●
+                                        td.table-insert__group-cell(data-alloy="HCP40X") ●
+                                        td.table-insert__group-cell(data-alloy="HCM30X")
+                                        td.table-insert__group-cell(data-alloy="HCS35X")
+                                        td.table-insert__plug-right(rowspan="5")
+
+                                    tr.table-insert__group-row.material-group__yellow
+                                        td.table-insert__group-cell
+                                            span.table-insert__title-group M
+                                        td.table-insert__group-cell(data-alloy="HCP30X") ○
+                                        td.table-insert__group-cell(data-alloy="HCP40X") ●
+                                        td.table-insert__group-cell(data-alloy="HCM30X") ●
+                                        td.table-insert__group-cell(data-alloy="HCS35X")
+
+                                    tr.table-insert__group-row.material-group__red
+                                        td.table-insert__cell
+                                            span.table-insert__title-group K
+                                        td.table-insert__group-cell(data-alloy="HCP30X")
+                                        td.table-insert__group-cell(data-alloy="HCP40X")
+                                        td.table-insert__group-cell(data-alloy="HCM30X")
+                                        td.table-insert__group-cell(data-alloy="HCS35X")
+
+                                    tr.table-insert__group-row.material-group__green
+                                        td.table-insert__cell
+                                            span.table-insert__title-group N
+                                        td.table-insert__group-cell(data-alloy="HCP30X")
+                                        td.table-insert__group-cell(data-alloy="HCP40X")
+                                        td.table-insert__group-cell(data-alloy="HCM30X")
+                                        td.table-insert__group-cell(data-alloy="HCS35X")
+
+                                    tr.table-insert__group-row.material-group__brown
+                                        td.table-insert__cell
+                                            span.table-insert__title-group S
+                                        td.table-insert__group-cell(data-alloy="HCP30X")
+                                        td.table-insert__group-cell(data-alloy="HCP40X") ○
+                                        td.table-insert__group-cell(data-alloy="HCM30X") ●
+                                        td.table-insert__group-cell(data-alloy="HCS35X") ●
+
+                                    tr.table-insert__head-row
+                                        td(colspan="2") Обозначение
+                                        td.table-insert__title-alloy(data-alloy="HCP30X")
+                                            span HCP30X
+                                        td.table-insert__title-alloy(data-alloy="HCP40X")
+                                            span HCP40X
+                                        td.table-insert__title-alloy(data-alloy="HCM30X")
+                                            span HCM30X
+                                        td.table-insert__title-alloy(data-alloy="HCS35X")
+                                            span HCS35X
+                                        td
+                                            span r, мм
+
+                                tbody
+                                    tr.insert-row
+                                        td.insert-designation(colspan="2") FONT120412ER
+
+                                        td.cell-hover(data-alloy="HCP30X")
+                                            a.table-insert__link-insert(href="#" title="title" target="_blank")
+                                                span.table-insert__in-stock
+
+                                        td.cell-hover(data-alloy="HCP40X")
+                                            a.table-insert__link-insert(href="#" title="title" target="_blank")
+                                                span.table-insert__in-stock.table-insert__in-stock--false
+
+                                        td.cell-hover(data-alloy="HCM30X")
+                                            a.table-insert__link-insert(href="#" title="title" target="_blank")
+                                                span.table-insert__in-stock
+
+                                        td.cell-hover(data-alloy="HCS35X")
+                                            a.table-insert__link-insert(href="#" title="title" target="_blank")
+                                                span.table-insert__in-stock
+
+                                        td 1.2
+
+                                    tr.insert-row
+                                        td(colspan="2").insert-designation FONT120412SR-F
+
+                                        td.cell-hover(data-alloy="HCP30X")
+                                            a.table-insert__link-insert(href="#" title="title" target="_blank")
+                                                span.table-insert__in-stock
+
+                                        td.cell-hover(data-alloy="HCP40X")
+                                            a.table-insert__link-insert(href="#" title="title" target="_blank")
+                                                span.table-insert__in-stock
+
+                                        td(data-alloy="HCM30X")
+
+                                        td.cell-hover(data-alloy="HCS35X")
+                                            a.table-insert__link-insert(href="#" title="title" target="_blank")
+                                                span.table-insert__in-stock.table-insert__in-stock--false
+
+                                        td 1.2
                 // Catalog::End
     // Category::End

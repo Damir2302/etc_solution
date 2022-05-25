@@ -47,10 +47,34 @@ $(document).ready(function() {
         });
     }
 
-
     $('.filter__title').on('click', function() {
         $(this).parent().toggleClass('active');
         $(this).parent().find('.filter__wrapper').slideToggle();
+    });
+
+    /////////////////////////////////////////////////////////////////////
+    // КАРТОЧКА ТОВАРА
+    ////////////////////////////////////////////////////////////////////
+    let item_cart_pagination;
+
+    item_cart_pagination = new Swiper('.swiper-item-pagination', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        watchSlidesProgress: true,
+        direction: 'vertical'
+    });
+
+    let item_cart;
+
+    item_cart = new Swiper('.swiper-item', {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        allowTouchMove: false,
+        thumbs: {
+          swiper: item_cart_pagination,
+        },
     });
 
 });
