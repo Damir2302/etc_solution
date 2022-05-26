@@ -219,17 +219,20 @@ block main
                                     li
                                         img(src="assets/images/a5.png", alt="img")
 
-                            table.table-insert
+                            table.equipment__table
                                 thead
+                                    tr
+                                        td.table-insert__plug-left(rowspan="6")
                                     tr.table-insert__group-row.material-group__blue
-                                        td.table-insert__plug-left(rowspan="5")
+
                                         td.table-insert__group-cell
                                             span.table-insert__title-group P
                                         td.table-insert__group-cell(data-alloy="HCP30X") ●
                                         td.table-insert__group-cell(data-alloy="HCP40X") ●
                                         td.table-insert__group-cell(data-alloy="HCM30X")
+                                        td.table-insert__group-cell(data-alloy="HCK10X")
+                                        td.table-insert__group-cell(data-alloy="HCN10X")
                                         td.table-insert__group-cell(data-alloy="HCS35X")
-                                        td.table-insert__plug-right(rowspan="5")
 
                                     tr.table-insert__group-row.material-group__yellow
                                         td.table-insert__group-cell
@@ -237,6 +240,8 @@ block main
                                         td.table-insert__group-cell(data-alloy="HCP30X") ○
                                         td.table-insert__group-cell(data-alloy="HCP40X") ●
                                         td.table-insert__group-cell(data-alloy="HCM30X") ●
+                                        td.table-insert__group-cell(data-alloy="HCK10X")
+                                        td.table-insert__group-cell(data-alloy="HCN10X")
                                         td.table-insert__group-cell(data-alloy="HCS35X")
 
                                     tr.table-insert__group-row.material-group__red
@@ -245,6 +250,8 @@ block main
                                         td.table-insert__group-cell(data-alloy="HCP30X")
                                         td.table-insert__group-cell(data-alloy="HCP40X")
                                         td.table-insert__group-cell(data-alloy="HCM30X")
+                                        td.table-insert__group-cell(data-alloy="HCK10X")
+                                        td.table-insert__group-cell(data-alloy="HCN10X")
                                         td.table-insert__group-cell(data-alloy="HCS35X")
 
                                     tr.table-insert__group-row.material-group__green
@@ -253,24 +260,34 @@ block main
                                         td.table-insert__group-cell(data-alloy="HCP30X")
                                         td.table-insert__group-cell(data-alloy="HCP40X")
                                         td.table-insert__group-cell(data-alloy="HCM30X")
+                                        td.table-insert__group-cell(data-alloy="HCK10X")
+                                        td.table-insert__group-cell(data-alloy="HCN10X")
                                         td.table-insert__group-cell(data-alloy="HCS35X")
 
                                     tr.table-insert__group-row.material-group__brown
-                                        td.table-insert__cell
+                                        td
                                             span.table-insert__title-group S
                                         td.table-insert__group-cell(data-alloy="HCP30X")
                                         td.table-insert__group-cell(data-alloy="HCP40X") ○
-                                        td.table-insert__group-cell(data-alloy="HCM30X") ●
-                                        td.table-insert__group-cell(data-alloy="HCS35X") ●
+                                        td.table-insert__group-cell(data-alloy="HCM30X")
+                                            span.fill-dot
+                                        td.table-insert__group-cell(data-alloy="HCK10X")
+                                            span.fill-dot.fill-dot--false
+                                        td.table-insert__group-cell(data-alloy="HCN10X")
+                                        td.table-insert__group-cell(data-alloy="HCS35X")
 
                                     tr.table-insert__head-row
-                                        td(colspan="2") Обозначение
+                                        td(colspan="2") Обозначения
                                         td.table-insert__title-alloy(data-alloy="HCP30X")
                                             span HCP30X
                                         td.table-insert__title-alloy(data-alloy="HCP40X")
                                             span HCP40X
                                         td.table-insert__title-alloy(data-alloy="HCM30X")
                                             span HCM30X
+                                        td.table-insert__title-alloy(data-alloy="HCK10X")
+                                            span HCK10X
+                                        td.table-insert__title-alloy(data-alloy="HCN10X")
+                                            span HCN10X
                                         td.table-insert__title-alloy(data-alloy="HCS35X")
                                             span HCS35X
                                         td
@@ -278,11 +295,32 @@ block main
 
                                 tbody
                                     tr.insert-row
-                                        td.insert-designation(colspan="2") FONT120412ER
+                                        td.insert-designation(colspan="2") SOMT1204AESN-S
 
                                         td.cell-hover(data-alloy="HCP30X")
                                             a.table-insert__link-insert(href="#" title="title" target="_blank")
-                                                span.table-insert__in-stock
+                                                span.table-insert__in-stock.table-insert__in-stock--false
+
+                                        td.cell-hover(data-alloy="HCP40X")
+                                            a.table-insert__link-insert(href="#" title="title" target="_blank")
+                                                span.table-insert__in-stock.table-insert__in-stock--false
+
+                                        td.cell-hover(data-alloy="HCM30X")
+
+                                        td.cell-hover(data-alloy="HCK10X")
+                                            a.table-insert__link-insert(href="#" title="title" target="_blank")
+                                                span.table-insert__in-stock.table-insert__in-stock--false
+
+                                        td.cell-hover(data-alloy="HCN10X")
+                                        td.cell-hover(data-alloy="HCS35X")
+                                        td 1
+
+                                    tr.insert-row
+                                        td(colspan="2").insert-designation SOMT1204AESN-H
+
+                                        td.cell-hover(data-alloy="HCP30X")
+                                            a.table-insert__link-insert(href="#" title="title" target="_blank")
+                                                span.table-insert__in-stock.table-insert__in-stock--false
 
                                         td.cell-hover(data-alloy="HCP40X")
                                             a.table-insert__link-insert(href="#" title="title" target="_blank")
@@ -290,31 +328,49 @@ block main
 
                                         td.cell-hover(data-alloy="HCM30X")
                                             a.table-insert__link-insert(href="#" title="title" target="_blank")
-                                                span.table-insert__in-stock
+                                                span.table-insert__in-stock.table-insert__in-stock--false
 
-                                        td.cell-hover(data-alloy="HCS35X")
+                                        td.cell-hover(data-alloy="HCK10X")
                                             a.table-insert__link-insert(href="#" title="title" target="_blank")
                                                 span.table-insert__in-stock
 
-                                        td 1.2
-
-                                    tr.insert-row
-                                        td(colspan="2").insert-designation FONT120412SR-F
-
-                                        td.cell-hover(data-alloy="HCP30X")
-                                            a.table-insert__link-insert(href="#" title="title" target="_blank")
-                                                span.table-insert__in-stock
-
-                                        td.cell-hover(data-alloy="HCP40X")
-                                            a.table-insert__link-insert(href="#" title="title" target="_blank")
-                                                span.table-insert__in-stock
-
-                                        td(data-alloy="HCM30X")
+                                        td(data-alloy="HCN10X")
 
                                         td.cell-hover(data-alloy="HCS35X")
                                             a.table-insert__link-insert(href="#" title="title" target="_blank")
                                                 span.table-insert__in-stock.table-insert__in-stock--false
 
-                                        td 1.2
+                                        td 1
+
+                                    tr.insert-row
+                                        td(colspan="2").insert-designation SOMT1204AESN-T
+
+                                        td(data-alloy="HCP30X")
+                                        td(data-alloy="HCP40X")
+                                        td(data-alloy="HCM30X")
+                                        td(data-alloy="HCK10X")
+                                        td(data-alloy="HCN10X")
+
+                                        td.cell-hover(data-alloy="HCS35X")
+                                            a.table-insert__link-insert(href="#" title="title" target="_blank")
+                                                span.table-insert__in-stock.table-insert__in-stock--false
+
+                                        td 1
+
+                                    tr.insert-row
+                                        td(colspan="2").insert-designation SOHT1204AEFN-AL
+
+                                        td(data-alloy="HCP30X")
+                                        td(data-alloy="HCP40X")
+                                        td(data-alloy="HCM30X")
+                                        td(data-alloy="HCK10X")
+
+                                        td.cell-hover(data-alloy="HCN10X")
+                                            a.table-insert__link-insert(href="#" title="title" target="_blank")
+                                                span.table-insert__in-stock.table-insert__in-stock--false
+
+                                        td(data-alloy="HCS35X")
+
+                                        td 1
                 // Catalog::End
     // Category::End
