@@ -71,7 +71,6 @@ $(document).ready(function() {
         centeredSlides: true,
         slidesPerView: 1,
         spaceBetween: 30,
-        allowTouchMove: false,
         thumbs: {
           swiper: item_cart_pagination,
         },

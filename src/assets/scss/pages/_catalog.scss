@@ -5,10 +5,22 @@
 .catalog__block {
     display: flex;
     column-gap: 30px;
+
+    @include breakpointMax(lg) {
+        flex-direction: column-reverse;
+    }
 }
 
 .catalog__inner {
     width: 75%;
+
+    @include breakpointMax(xl) {
+        width: 70%;
+    }
+
+    @include breakpointMax(lg) {
+        width: 100%;
+    }
 }
 
 .catalog__inner p {

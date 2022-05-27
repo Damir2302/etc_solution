@@ -1,5 +1,13 @@
 .catalog__aside {
     flex-basis: calc((100% - 80px) / 4);
+
+    @include breakpointMax(xl) {
+        flex-basis: calc(100% / 3);
+    }
+
+    @include breakpointMax(lg) {
+        margin-top: 50px;
+    }
 }
 
 .aside__list-item {
@@ -21,6 +29,10 @@
     line-height: 1.4;
     border-radius: 3px;
     border: 1px solid #555D6B;
+
+    @include breakpointMax(xl) {
+        font-size: 16px;
+    }
 }
 
 .aside__list-link::after {
@@ -45,6 +57,10 @@
     margin-top: 10px;
     padding-left: 37px;
     display: none;
+
+    @include breakpointMax(xl) {
+        padding-left: 20px;
+    }
 }
 
 .aside__list-item.active > .aside__sublist {

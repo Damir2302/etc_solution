@@ -6,6 +6,20 @@
     column-gap: 30px;
     border: 1px solid #555D6B;
     border-radius: 3px;
+
+    @include breakpointMax(hd) {
+        column-gap: 20px;
+    }
+
+    @include breakpointMax(xl) {
+        flex-direction: column;
+    }
+
+    @include breakpointMax(md) {
+        padding: 0;
+        background: none;
+        border: none;
+    }
 }
 
 .product__image {
@@ -14,12 +28,24 @@
     column-gap: 10px;
     width: 78%;
     overflow: hidden;
+
+    @include breakpointMax(hd) {
+        width: 100%;
+    }
+
+    @include breakpointMax(lg) {
+        column-gap: 30px;
+    }
 }
 
 .swiper-item-pagination {
     margin: 0;
     max-height: 532px;
     overflow: visible;
+
+    @include breakpointMax(md) {
+        display: none;
+    }
 }
 
 .swiper-item-pagination .swiper-slide {
@@ -43,10 +69,21 @@
 }
 
 .swiper-item-pagination .product__block {
+    background: #fff;
     position: relative;
     width: 75px;
     height: 75px;
     border-radius: 3px;
+
+    @include breakpointMax(hd) {
+        width: 48px;
+        height: 48px;
+    }
+
+    @include breakpointMax(lg) {
+        width: 75px;
+        height: 75px;
+    }
 }
 
 .swiper-item {
@@ -56,6 +93,10 @@
     max-width: 532px;
     border-radius: 3px;
     box-sizing: border-box;
+
+    @include breakpointMax(lg) {
+        max-width: unset;
+    }
 }
 
 .product__block {
@@ -67,12 +108,20 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    @include breakpointMax(hd) {
+        object-fit: contain;
+    }
 }
 
 .product__desc {
     display: flex;
     flex-direction: column;
     font-weight: 400;
+
+    @include breakpointMax(lg) {
+        width: 100%;
+    }
 }
 
 .product__desc h4 {
@@ -80,6 +129,14 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 1.4;
+
+    @include breakpointMax(xl) {
+        margin-top: 30px;
+    }
+
+    @include breakpointMax(lg) {
+        margin-top: 60px;
+    }
 }
 
 .product__desc table {
@@ -121,10 +178,18 @@
 .features {
     display: flex;
     column-gap: 30px;
+
+    @include breakpointMax(xl) {
+        flex-direction: column;
+    }
 }
 
 .features__tables {
     width: calc(57% - 30px);
+
+    @include breakpointMax(xl) {
+        width: 100%;
+    }
 }
 
 .features__tables h4 {
@@ -175,15 +240,25 @@
     margin-top: 70px;
     position: static;
     transform: unset;
+
+    @include breakpointMax(lg) {
+        margin: 60px 0 20px;
+    }
 }
 
 .features__equipment {
     margin-top: 25px;
     max-width: 500px;
+
+    @include breakpointMax(md) {
+        display: none;
+    }
 }
 
 .features__equipment h4 {
     margin-bottom: 35px;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .in-stock {
@@ -304,6 +379,20 @@ td.table-insert__plug-left {
     width: 32px;
 }
 
+.table-insert__group-cell .fill-dot {
+    margin: 0 auto;
+    background: #353A43;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 84px;
+}
+
+.table-insert__group-cell .fill-dot--false {
+    background: transparent;
+    border: 1px solid #222222;
+}
+
 .table-insert__title-group {
     display: inline-block;
     min-width: 16px;
@@ -313,7 +402,7 @@ td.table-insert__plug-left {
 
 .table-insert__title-alloy span {
     margin: auto;
-    padding: 4px 8px;
+    padding: 10px 8px 20px;
     position: relative;
     display: flex;
     font-weight: 600;
