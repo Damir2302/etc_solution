@@ -36,6 +36,10 @@
     @include breakpointMax(lg) {
         column-gap: 30px;
     }
+
+    @include breakpointMax(md) {
+        flex-direction: column-reverse;
+    }
 }
 
 .swiper-item-pagination {
@@ -44,12 +48,23 @@
     overflow: visible;
 
     @include breakpointMax(md) {
-        display: none;
+        margin-top: 15px;
+    }
+}
+
+.swiper-item-pagination .product__container {
+
+    @include breakpointMax(md) {
+        justify-content: center;
     }
 }
 
 .swiper-item-pagination .swiper-slide {
     height: auto;
+
+    @include breakpointMax(md) {
+        width: auto;
+    }
 }
 
 .swiper-item-pagination .swiper-slide::after {
@@ -84,6 +99,11 @@
         width: 75px;
         height: 75px;
     }
+
+    @include breakpointMax(md) {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .swiper-item {
@@ -96,6 +116,10 @@
 
     @include breakpointMax(lg) {
         max-width: unset;
+    }
+
+    @include breakpointMax(md) {
+        padding: 15px;
     }
 }
 
@@ -165,6 +189,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include breakpointMax(md) {
+        flex-direction: column;
+        align-items: flex-end;
+    }
 }
 
 .product__desc-price .actual-price {
@@ -173,6 +202,11 @@
 
 .product__desc-button {
     padding: 20px;
+
+    @include breakpointMax(md) {
+        padding-right: 0;
+        font-size: 13px;
+    }
 }
 
 .features {

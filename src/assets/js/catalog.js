@@ -61,7 +61,13 @@ $(document).ready(function() {
         slidesPerView: 'auto',
         spaceBetween: 10,
         watchSlidesProgress: true,
-        direction: 'vertical'
+        direction: 'horizontal',
+
+        breakpoints: {
+            768: {
+                direction: 'vertical'
+            }
+        }
     });
 
     let item_cart;

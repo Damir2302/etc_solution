@@ -1,9 +1,22 @@
 .news-section {
     padding: 60px 0 75px;
+
+    @include breakpointMax(lg) {
+        padding: 40px 0;
+    }
 }
 
 .news-section .news__item {
-    flex-basis: 31.6%;
+    flex-basis: calc((100% / 3) - 20px);
+    overflow: hidden;
+
+    @include breakpointMax(lg) {
+        flex-basis: calc((100% / 2) - 20px);
+    }
+
+    @include breakpointMax(sm) {
+        flex-basis: 100%
+    }
 }
 
 .articles__tab {

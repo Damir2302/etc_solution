@@ -6,6 +6,14 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+
+    @include breakpointMax(hd) {
+        column-gap: 30px;
+    }
+
+    @include breakpointMax(lg) {
+        display: block;
+    }
 }
 
 .service-inner__image {
@@ -20,10 +28,23 @@
 .service-inner__content {
     padding-right: calc(8.333% + 16px);
     flex-basis: 50%;
+
+    @include breakpointMax(hd) {
+        padding: 0;
+    }
+
+    @include breakpointMax(lg) {
+        margin-top: 30px;
+    }
 }
 
 .service-inner__content button {
     margin-bottom: 40px;
+
+    @include breakpointMax(md) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .button-return {
@@ -34,6 +55,10 @@
     border-radius: 3px;
     border: 1px solid #555D6B;
     transform: translateY(48px);
+
+    @include breakpointMax(lg) {
+        position: relative;
+    }
 }
 
 .button-return a {

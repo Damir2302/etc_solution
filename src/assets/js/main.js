@@ -32,6 +32,7 @@ $(document).ready(function() {
         $(this).toggleClass('opened');
         $('body').toggleClass('overflow-hidden');
         $('.header__navbar').toggleClass('opened');
+        $('#page').toggleClass('bg-overlay');
     });
 
     $('html').click(function(e) {
@@ -39,6 +40,7 @@ $(document).ready(function() {
             $('#burgerBtn').removeClass('opened');
             $('body').removeClass('overflow-hidden');
             $('.header__navbar').removeClass('opened');
+            $('#page').removeClass('bg-overlay');
         }
     });
 

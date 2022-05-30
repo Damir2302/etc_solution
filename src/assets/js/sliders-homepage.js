@@ -125,7 +125,25 @@ $(document).ready(function() {
     let about_section;
 
     if ($('.sertificates__slider').length > 0) {
-        let slides_per_view = 4;
+        let slides_per_view;
+
+        function adaptiveSlider() {
+            if ($(window).width() >= 1024) {
+                slides_per_view = 4;
+            } else if ($(window).width() <= 991 && $(window).width() >= 576) {
+                slides_per_view = 2;
+            } else {
+                slides_per_view = 1;
+            }
+        }
+
+        adaptiveSlider();
+
+        $(window).on('resize', function() {
+            adaptiveSlider();
+
+        });
+
         about_section = new Swiper('.sertificates__slider', {
             slidesPerView: slides_per_view,
             slidesPerGroup: slides_per_view,

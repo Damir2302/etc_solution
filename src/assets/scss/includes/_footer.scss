@@ -19,6 +19,10 @@
     @include breakpoint(lg) {
         column-gap: 20px;
     }
+
+    @include breakpointMax(lg) {
+        margin-left: 20px!important;
+    }
 }
 
 .brands__wrapper .swiper-slide {

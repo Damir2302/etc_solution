@@ -70,8 +70,10 @@
 
 .catalog__picture {
     background: #292C31;
-    min-width: 107px;
-    min-height: 107px;
+    min-width: 88px;
+    min-height: 88px;
+    width: 100%;
+    height: 100%;
     max-width: 107px;
     max-height: 107px;
     border-radius: 3px;
@@ -111,10 +113,23 @@
     align-items: flex-start;
     justify-content: space-between;
     column-gap: 30px;
+
+    @include breakpointMax(hd) {
+        display: block;
+    }
 }
 
 .about-sec__main {
     width: 50%;
+
+    @include breakpointMax(hd) {
+        margin: 0 0 50px;
+        width: 100%;
+    }
+
+    @include breakpointMax(md) {
+        margin: 0 0 75px;
+    }
 }
 
 .about-sec__main-text {
@@ -123,6 +138,10 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
+
+    @include breakpointMax(hd) {
+        max-width: 100%;
+    }
 }
 
 .about-sec__wrapper {
@@ -135,12 +154,26 @@
     border: 1px solid #555D6B;
     border-radius: 3px;
     box-sizing: border-box;
+
+    @include breakpointMax(hd) {
+        width: 100%;
+    }
+
+    @include breakpointMax(md) {
+        padding: 0;
+        display: block;
+        border: none;
+    }
 }
 
 .about-sec__item {
     display: flex;
     column-gap: 30px;
     flex-basis: 42%;
+
+    @include breakpointMax(md) {
+        margin-bottom: 40px;
+    }
 }
 
 .about-sec__img {
@@ -227,11 +260,20 @@
 
 .services__slider {
     margin-top: 60px;
+
+    @include breakpointMax(md) {
+        margin-top: 30px;
+    }
 }
 
 .services__slider .swiper-slide {
     width: 785px;
     height: 412px;
+
+    @include breakpointMax(md) {
+        width: 100%;
+        height: 375px;
+    }
 }
 
 .services__item {
@@ -244,6 +286,12 @@
     opacity: 0.3;
     box-sizing: border-box;
     transition: opacity .3s ease;
+
+    @include breakpointMax(md) {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
 }
 
 .services__item::before {
@@ -263,6 +311,10 @@
 
 .services__item-wrap {
     position: relative;
+
+    @include breakpointMax(md) {
+        margin-bottom: 30px;
+    }
 }
 
 .services__item-title {
@@ -281,6 +333,10 @@
 
 .services__item-btn {
     position: relative;
+
+    @include breakpointMax(md) {
+        margin-left: unset;
+    }
 }
 
 .services__slider .swiper-pagination {

@@ -1,15 +1,33 @@
 .news-inner-section {
     padding: 60px 0 40px;
+
+    @include breakpointMax(xl) {
+        padding: 40px 0;
+    }
 }
 
 .news-inner__wrapper {
     display: flex;
     justify-content: space-between;
     column-gap: 30px;
+
+    @include breakpointMax(lg) {
+        display: block;
+    }
 }
 
 .news-inner__block {
-    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 66.666%;
+}
+
+.news-inner__block--left {
+
+
+    @include breakpointMax(hd) {
+        flex-direction: column-reverse;
+    }
 }
 
 .news-inner__block--left p {
@@ -18,6 +36,10 @@
 
 .news-inner__image {
     margin-bottom: 50px;
+
+    @include breakpointMax(hd) {
+        width: 100%;
+    }
 }
 
 .news-inner__block .button-return {
@@ -27,22 +49,47 @@
 }
 
 .news-inner__block--right {
-    display: flex;
-    justify-content: space-between;
+    flex-basis: 33.333%;
+
+    @include breakpointMax(lg) {
+        margin-top: 90px;
+    }
 }
 
 .news-inner__label {
-    flex-basis: 50%;
     max-width: 242px;
+
+    @include breakpointMax(hd) {
+        margin-bottom: 50px;
+        max-width: 100%;
+    }
 }
 
 .news-inner__date {
     margin-bottom: 77px;
+
+    @include breakpointMax(hd) {
+        margin-bottom: 30px;
+    }
+}
+
+.news-inner__article {
+    width: 62.5%;
+
+    @include breakpointMax(hd) {
+        width: 100%;
+    }
 }
 
 .news-inner__articles {
+    margin-left: auto;
+    width: 100%;
     max-width: 378px;
-    flex-basis: 50%;
+
+    @include breakpointMax(lg) {
+        margin-left: 0;
+        max-width: 100%;
+    }
 }
 
 .articles-title {
@@ -51,8 +98,30 @@
     font-size: 36px;
     line-height: 1.1;
     text-transform: uppercase;
+
+    @include breakpointMax(md) {
+        font-size: 28px;
+    }
+}
+
+.articles-wrapper {
+
+    @include breakpointMax(lg) {
+        display: flex;
+        column-gap: 15px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 .news-inner__articles .news__item {
     margin-bottom: 30px;
+
+    @include breakpointMax(lg) {
+        flex-basis: calc(50% - 15px);
+    }
+
+    @include breakpointMax(sm) {
+        flex-basis: 100%;
+    }
 }
