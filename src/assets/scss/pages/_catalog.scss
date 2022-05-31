@@ -1,5 +1,9 @@
 .catalog-section {
     padding: 60px 0 90px;
+
+    @include breakpointMax(md) {
+        padding: 40px 0;
+    }
 }
 
 .catalog__block {
@@ -33,4 +37,31 @@
 
 .catalog-section  .catalog__item {
     flex-basis: calc((100% - 60px) / 3);
+
+    @include breakpointMax(hd) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @include breakpointMax(xl) {
+        flex-basis: 100%;
+    }
+
+    @include breakpointMax(lg) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @include breakpointMax(md) {
+        flex-basis: 100%;
+    }
+}
+
+.catalog-section .catalog__picture {
+
+    @include breakpoint(lg) {
+        width: calc(((50% / 2.7) * 1) - 15px);
+    }
+
+    @include breakpoint(hd) {
+        width: calc(((100% / 2.7) * 1) - 15px);
+    }
 }

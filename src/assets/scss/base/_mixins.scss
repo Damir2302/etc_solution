@@ -46,3 +46,7 @@ $hd: 1440px;
         @media (max-width: $hd - 1px) { @content ; }
     }
 }
+
+@mixin breakpointMaxCustom($point) {
+    @media (max-width: $point - 1px) { @content ; }
+}

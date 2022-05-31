@@ -262,6 +262,19 @@
     text-align: center;
     border: 1px solid #555D6B;
     border-radius: 0px 0px 3px 3px;
+
+    @include breakpointMax(xl) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.aside__action button {
+
+    @include breakpointMax(xl) {
+        margin: 10px auto;
+        max-width: 200px;
+    }
 }
 
 .aside__btn-showmore {

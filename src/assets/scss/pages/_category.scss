@@ -14,11 +14,28 @@
     align-items: flex-start;
     flex-basis: calc((100% - 60px) / 3);
     column-gap: 17px;
+
+    @include breakpointMax(hd) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @include breakpointMax(xl) {
+        flex-basis: 100%;
+    }
+
+    @include breakpointMax(sm) {
+        display: block;
+    }
 }
 
 .category-section .catalog__info-title {
     margin-bottom: 10px;
     font-size: 20px;
+
+    @include breakpointMax(sm) {
+        margin-top: 20px;
+        font-size: 18px;
+    }
 }
 
 .category-section .catalog__info-title:hover {
@@ -59,12 +76,20 @@
     max-width: 378px;
     border: 1px solid #555D6B;
     border-radius: 3px;
+
+    @include breakpointMax(xs) {
+        padding: 15px 10px;
+    }
 }
 
 .sort__label {
     font-weight: 600;
     font-size: 15px;
     line-height: 1.4;
+
+    @include breakpointMax(xs) {
+        font-size: 13px;
+    }
 }
 
 .sort__select {
@@ -75,6 +100,10 @@
     text-transform: uppercase;
     color: #D1D1D1;
     border: none;
+
+    @include breakpointMax(xs) {
+        padding-right: 0;
+    }
 }
 
 .catalog__row {
@@ -85,6 +114,31 @@
     justify-content: space-between;
     border: 1px solid #555D6B;
     border-radius: 3px;
+
+    @include breakpointMax(xl) {
+        display: block;
+    }
+}
+
+.catalog__table .item-price {
+
+    @include breakpointMax(md) {
+        margin-bottom: 20px;
+    }
+}
+
+.catalog__table .old-price {
+
+    @include breakpointMax(xl) {
+        font-size: 16px;
+    }
+}
+
+.catalog__table .actual-price {
+
+    @include breakpointMax(xl) {
+        font-size: 24px;
+    }
 }
 
 .catalog__row-item {
@@ -96,6 +150,11 @@
     width: 89px;
     height: 89px;
     border-radius: 3px;
+
+    @include breakpointMax(md) {
+        min-width: 80px;
+        min-height: 80px;
+    }
 }
 
 .item-label {
@@ -103,6 +162,10 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 1.4;
+
+    @include breakpointMax(md) {
+        font-size: 16px;
+    }
 }
 
 .item-label:hover {
@@ -112,6 +175,17 @@
 .catalog__row-block {
     display: flex;
     align-items: center;
+
+    @include breakpointMax(xl) {
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+    @include breakpointMax(md) {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: unset;
+    }
 }
 
 .item-price {
