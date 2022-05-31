@@ -6,12 +6,14 @@
     }
 }
 
-.news-section .news__item {
-    flex-basis: calc((100% / 3) - 20px);
-    overflow: hidden;
+.articles__inner .news__item {
 
-    @include breakpointMax(lg) {
-        flex-basis: calc((100% / 2) - 20px);
+    @include breakpointMax(hd) {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+
+    @include breakpointMax(xl) {
+        flex-basis: calc((100% - 30px) / 2);
     }
 
     @include breakpointMax(sm) {

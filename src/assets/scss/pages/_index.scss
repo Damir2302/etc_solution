@@ -257,6 +257,10 @@
 .popular-section {
     padding: 90px 0 150px;
     background: #353A43;
+
+    @include breakpointMax(md) {
+        padding: 60px 0;
+    }
 }
 
 .popular-section .custom-pagination {
@@ -266,6 +270,10 @@
 
 .popular__slider {
     margin-top: 97px;
+
+    @include breakpointMax(md) {
+        margin-top: 60px;
+    }
 }
 
 .popular__item {
@@ -275,6 +283,12 @@
 .popular__item-img {
     margin: 0 0 10px;
     background: #fff;
+
+    @include breakpointMax(sm) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 257px;
+    }
 }
 
 .popular__item-title {
@@ -430,10 +444,20 @@
     padding: 0 0 50px;
 }
 
+.news-sec__button {
+
+    @include breakpointMax(md) {
+        max-width: 190px;
+        text-align: center;
+    }
+}
+
 .news-sec__wrapper {
     margin-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     column-gap: 30px;
+    row-gap: 30px;
 }
 
 .news__item {
@@ -445,9 +469,18 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    flex-basis: 25%;
+    flex-basis: calc((100% - 90px) / 4);
     height: 240px;
     box-sizing: border-box;
+    overflow: hidden;
+
+    @include breakpointMax(xl) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @include breakpointMax(sm) {
+        flex-basis: 100%
+    }
 }
 
 .news__item::before {
