@@ -8,6 +8,7 @@
 }
 
 .breadcrumbs-wrapper {
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
 
@@ -17,7 +18,6 @@
 }
 
 .breadcrumbs-item {
-    margin-bottom: 5px;
     display: flex;
     align-items: center;
     font-weight: 400;
@@ -37,6 +37,8 @@
 
 .breadcrumbs-separator {
     margin: 0 5px;
+    font-size: 14px;
+    line-height: 1;
     color: #BBBEC4;
 }
 
