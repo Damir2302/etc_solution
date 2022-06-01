@@ -23,9 +23,10 @@
 }
 
 .news-inner__block--left {
-
+    padding: 0;
 
     @include breakpointMax(hd) {
+        padding-right: 30px;
         flex-direction: column-reverse;
     }
 }
@@ -40,6 +41,10 @@
     @include breakpointMax(hd) {
         width: 100%;
     }
+}
+
+.news-inner__image img {
+    width: 100%;
 }
 
 .news-inner__block .button-return {
