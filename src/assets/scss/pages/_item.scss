@@ -138,6 +138,10 @@
     }
 }
 
+.swiper-item .product__block img {
+    object-fit: contain;
+}
+
 .product__desc {
     display: flex;
     flex-direction: column;
