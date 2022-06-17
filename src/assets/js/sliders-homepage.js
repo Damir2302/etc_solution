@@ -73,7 +73,7 @@ $(document).ready(function() {
             let currentNumber = $('.popular-section .current-number');
             let lastNumber = $('.popular-section .last-number');
 
-            currentNumber.html(addZero((popular_main.realIndex / slides_per_view) +  1) + ((popular_main.realIndex / slides_per_view) +  1));
+            currentNumber.html(addZero(Math.ceil(popular_main.realIndex / slides_per_view) +  1) + (Math.ceil(popular_main.realIndex / slides_per_view) +  1));
             lastNumber.html(addZero((Math.ceil(popular_main.slides.length) / slides_per_view)) + (Math.ceil((popular_main.slides.length) / slides_per_view)))
         }
 
@@ -176,7 +176,7 @@ $(document).ready(function() {
             let currentNumber = $('.certificates-section .current-number');
             let lastNumber = $('.certificates-section .last-number');
 
-            currentNumber.html(addZero((about_section.realIndex / slides_per_view) +  1) + ((about_section.realIndex / slides_per_view) +  1));
+            currentNumber.html(addZero(Math.ceil(about_section.realIndex / slides_per_view) +  1) + (Math.ceil(about_section.realIndex / slides_per_view) +  1));
             lastNumber.html(addZero((Math.ceil(about_section.slides.length) / slides_per_view)) + (Math.ceil((about_section.slides.length) / slides_per_view)))
         }
 
