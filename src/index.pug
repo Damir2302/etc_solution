@@ -15,7 +15,11 @@ block main
             .swiper-wrapper
 
                 .swiper-slide
-                    .hero__slide(style="background-image: url('assets/images/grad.jpg')")
+                    .hero__slide
+                        .slide-video
+                            video(playsinline muted autoplay loop)
+                                source(src="assets/images/lgq0v2m9r8hlq0u0p9j0tprsrfqn3tfc.mp4" type="video/mp4")
+
                         .container
                             p.hero__subtitle Профессиональная оснастка
                             h2.hero__title Инструменты для механообработки
