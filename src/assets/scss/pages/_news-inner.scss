@@ -9,7 +9,6 @@
 .news-inner__wrapper {
     display: flex;
     justify-content: space-between;
-    column-gap: 30px;
 
     @include breakpointMax(lg) {
         display: block;
@@ -113,13 +112,13 @@
 
     @include breakpointMax(lg) {
         display: flex;
-        column-gap: 15px;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 }
 
 .news-inner__articles .news__item {
+    margin-left: 0;
     margin-bottom: 30px;
 
     @include breakpointMax(lg) {

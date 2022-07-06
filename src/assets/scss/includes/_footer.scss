@@ -16,10 +16,6 @@
     align-items: center;
     justify-content: space-between;
 
-    @include breakpoint(lg) {
-        column-gap: 20px;
-    }
-
     @include breakpointMax(lg) {
         margin-left: 20px!important;
     }
@@ -36,6 +32,13 @@
     }
 }
 
+.brands__wrapper .swiper-slide ~ .swiper-slide {
+
+    @include breakpoint(lg) {
+        margin-left: 20px;
+    }
+}
+
 .footer {
     padding: 40px 0 50px;
     background: #353A43;
@@ -44,12 +47,7 @@
 .footer__top {
     padding: 0 0 36px;
     display: flex;
-    column-gap: 180px;
     border-bottom: 1px solid rgba(85, 93, 107, 1);
-
-    @include breakpointMax(hd) {
-        column-gap: 80px;
-    }
 
     @include breakpointMax(lg) {
         display: block;
@@ -57,8 +55,17 @@
 }
 
 .footer__logo {
+    margin-right: 180px;
     flex-basis: 221px;
     flex-shrink: 0;
+
+    @include breakpointMax(hd) {
+        margin-right: 80px;
+    }
+
+    @include breakpointMax(md) {
+        margin-right: 0;
+    }
 }
 
 .footer__logo-img {
@@ -104,7 +111,6 @@
 .footer__nav {
     margin: 0 0 45px;
     display: flex;
-    column-gap: 40px;
     flex-basis: 835px;
 
     @include breakpointMax(md) {
@@ -122,6 +128,13 @@
     }
 }
 
+.footer__nav-item ~ .footer__nav-item {
+
+    @include breakpoint(md) {
+        margin-left: 40px;
+    }
+}
+
 .footer__nav-link {
     font-weight: 400;
     font-size: 16px;
@@ -132,7 +145,6 @@
 .footer__socials {
     margin-right: 20px;
     display: flex;
-    column-gap: 10px;
 
     @include breakpointMax(hd) {
         margin-right: 0;
@@ -142,6 +154,10 @@
         margin: 30px 0 0;
         justify-content: center;
     }
+}
+
+.footer__socials li ~ li {
+    margin-left: 10px;
 }
 
 .footer__socials i {
@@ -156,9 +172,9 @@
 }
 
 .footer__menu-bottom ul {
+    margin-left: -38px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 38px;
 
     @include breakpointMax(md) {
         text-align: center;
@@ -167,6 +183,7 @@
 }
 
 .footer__menu-bottom li {
+    margin-left: 38px;
     margin-bottom: 8px;
     flex-basis: 240px;
 }
@@ -181,15 +198,6 @@
 .footer__bottom {
     padding: 50px 0 0;
     display: flex;
-    column-gap: 165px;
-
-    @include breakpointMax(hd) {
-        column-gap: 75px;
-    }
-
-    @include breakpointMax(lg) {
-        column-gap: 48px;
-    }
 
     @include breakpointMax(md) {
         padding: 30px 0 0;
@@ -198,8 +206,17 @@
 }
 
 .footer__copyright {
+    margin-right: 165px;
     flex-basis: 230px;
     flex-shrink: 0;
+
+    @include breakpointMax(hd) {
+        margin-right: 75px;
+    }
+
+    @include breakpointMax(lg) {
+        margin-right: 48px;
+    }
 
     @include breakpointMax(md) {
         margin: 30px 0 0;
@@ -239,7 +256,6 @@
 
     @include breakpointMax(hd) {
         justify-content: unset;
-        column-gap: 30px;
     }
 
     @include breakpointMax(lg) {
@@ -261,9 +277,21 @@
 
     @include breakpointMax(md) {
         margin: 0 0 10px;
+        padding-right: 0;
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+}
+
+.contact-item ~ .contact-item {
+
+    @include breakpointMax(hd) {
+        margin-left: 30px;
+    }
+
+    @include breakpointMax(md) {
+        margin-left: 0;
     }
 }
 
@@ -304,7 +332,6 @@
     @include breakpointMax(hd) {
         margin: 30px 0 0;
         justify-content: unset;
-        column-gap: 30px;
     }
 
     @include breakpointMax(lg) {
@@ -331,4 +358,11 @@
 
 .developer-link a {
     display: inline-block;
+}
+
+.politics-link {
+
+    @include breakpointMax(hd) {
+        margin: 0 30px;
+    }
 }

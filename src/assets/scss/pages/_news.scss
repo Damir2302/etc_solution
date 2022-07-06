@@ -7,13 +7,14 @@
 }
 
 .articles__inner .news__item {
+    margin-bottom: 30px;
 
     @include breakpointMax(hd) {
-        flex-basis: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
     }
 
     @include breakpointMax(xl) {
-        flex-basis: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
     }
 
     @include breakpointMax(sm) {
@@ -24,7 +25,6 @@
 .articles__tab {
     margin-top: 38px;
     display: flex;
-    column-gap: 30px;
 }
 
 .articles__year {
@@ -32,6 +32,10 @@
     font-size: 18px;
     line-height: 1.38;
     color: #BBBEC4;
+}
+
+.articles__year ~ .articles__year {
+    margin-left: 30px;
 }
 
 .articles__year.active {

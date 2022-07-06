@@ -8,15 +8,19 @@
 
 .category-section .catalog__wrapper {
     margin: 0;
+    margin-left: -30px;
+
+    @include breakpointMax(md) {
+        margin-left: 0;
+    }
 }
 
 .category-section .catalog__item {
     align-items: flex-start;
-    flex-basis: calc((100% - 60px) / 3);
-    column-gap: 17px;
+    flex-basis: calc((100% - 90px) / 3);
 
     @include breakpointMax(hd) {
-        flex-basis: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
     }
 
     @include breakpointMax(xl) {

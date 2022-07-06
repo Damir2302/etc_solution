@@ -67,7 +67,7 @@
 }
 
 .production-section {
-    padding: 60px 0 35px;
+    padding: 60px 0 5px;
 }
 
 .prod__button {
@@ -79,35 +79,36 @@
 
 .catalog__wrapper {
     margin: 60px 0 0;
+    margin-left: -30px;
     display: flex;
-    column-gap: 30px;
-    row-gap: 30px;
     flex-wrap: wrap;
 
     @include breakpointMax(md) {
         margin: 30px 0 0;
-        row-gap: 10px;
     }
 }
 
 .catalog__item {
+    margin-bottom: 30px;
+    margin-left: 30px;
     padding: 15px 12px 15px 15px;
     background: #3A3E47;
     display: flex;
-    column-gap: 15px;
-    flex-basis: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 120px) / 4);
     border: 1px solid #555D6B;
     border-radius: 3px;
 
     @include breakpointMax(hd) {
-        flex-basis: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
     }
 
     @include breakpointMax(lg) {
-        flex-basis: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
     }
 
     @include breakpointMax(md) {
+        margin-left: 0;
+        margin-bottom: 10px;
         flex-basis: 100%;
     }
 }
@@ -117,6 +118,7 @@
 }
 
 .catalog__picture {
+    margin-right: 15px;
     background: #292C31;
     width: calc(((100% / 2.7) * 1) - 15px);
     border-radius: 3px;
@@ -169,13 +171,16 @@
 
 .about-section {
     padding: 35px 0 110px;
+
+    @include breakpointMax(md) {
+        padding: 35px 0 50px;
+    }
 }
 
 .about-sec {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    column-gap: 30px;
 
     @include breakpointMax(hd) {
         display: block;
@@ -183,6 +188,7 @@
 }
 
 .about-sec__main {
+    margin-right: 30px;
     width: 50%;
 
     @include breakpointMax(hd) {
@@ -211,8 +217,6 @@
     padding: 58px  49px 65px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 80px;
-    row-gap: 95px;
     width: 50%;
     border: 1px solid #555D6B;
     border-radius: 3px;
@@ -230,16 +234,23 @@
 }
 
 .about-sec__item {
+    margin-top: 95px;
     display: flex;
-    column-gap: 30px;
-    flex-basis: 42%;
+    flex-basis: 50%;
 
     @include breakpointMax(md) {
+        margin-top: 0;
         margin-bottom: 40px;
     }
 }
 
+.about-sec__item:nth-child(1),
+.about-sec__item:nth-child(2) {
+    margin-top: 0;
+}
+
 .about-sec__img {
+    margin-right: 30px;
     min-width: 73px;
     min-height: 73px;
     max-width: 73px;
@@ -469,14 +480,14 @@
 }
 
 .news-sec__wrapper {
+    margin-left: -30px;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
 }
 
 .news__item {
+    margin-left: 30px;
     padding: 20px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -485,13 +496,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    flex-basis: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 120px) / 4);
     height: 240px;
     box-sizing: border-box;
     overflow: hidden;
 
     @include breakpointMax(xl) {
-        flex-basis: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
     }
 
     @include breakpointMax(sm) {

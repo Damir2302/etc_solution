@@ -8,7 +8,6 @@
 
 .catalog__block {
     display: flex;
-    column-gap: 30px;
 
     @include breakpointMax(lg) {
         flex-direction: column-reverse;
@@ -32,14 +31,14 @@
 }
 
 .catalog-section .catalog__wrapper {
-    margin: 0;
+    margin-top: 0;
 }
 
 .catalog-section  .catalog__item {
-    flex-basis: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 90px) / 3);
 
     @include breakpointMax(hd) {
-        flex-basis: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
     }
 
     @include breakpointMax(xl) {
@@ -47,7 +46,7 @@
     }
 
     @include breakpointMax(lg) {
-        flex-basis: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
     }
 
     @include breakpointMax(md) {

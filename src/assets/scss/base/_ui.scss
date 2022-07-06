@@ -193,18 +193,19 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 30px;
 }
 
 .swiper-btn {
+    margin-right: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 16px;
 }
 
 .swiper-btn span {
     margin-top: -4px;
+    margin-left: 16px;
+    margin-right: 16px;
     color: #D1D1D1;
 }
 

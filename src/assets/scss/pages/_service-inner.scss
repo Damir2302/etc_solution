@@ -7,10 +7,6 @@
     display: flex;
     justify-content: space-between;
 
-    @include breakpointMax(hd) {
-        column-gap: 30px;
-    }
-
     @include breakpointMax(lg) {
         display: block;
     }
@@ -19,6 +15,14 @@
 .service-inner__image {
     flex-basis: 50%;
     max-width: 650px;
+
+    @include breakpointMax(hd) {
+        margin-right: 30px;
+    }
+
+    @include breakpointMax(md) {
+        margin-right: 0;
+    }
 }
 
 .service-inner__image img {

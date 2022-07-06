@@ -3,13 +3,8 @@
     background: #3A3E47;
     display: flex;
     align-items: flex-start;
-    column-gap: 30px;
     border: 1px solid #555D6B;
     border-radius: 3px;
-
-    @include breakpointMax(hd) {
-        column-gap: 20px;
-    }
 
     @include breakpointMax(xl) {
         flex-direction: column;
@@ -23,18 +18,19 @@
 }
 
 .product__image {
+    margin-right: 30px;
     position: relative;
     display: flex;
-    column-gap: 10px;
     width: 78%;
     overflow: hidden;
 
     @include breakpointMax(hd) {
+        margin-right: 20px;
         width: 100%;
     }
 
     @include breakpointMax(lg) {
-        column-gap: 30px;
+        margin-right: 0;
     }
 
     @include breakpointMax(md) {
@@ -44,8 +40,13 @@
 
 .swiper-item-pagination {
     margin: 0;
+    margin-right: 10px;
     max-height: 532px;
     overflow: visible;
+
+    @include breakpointMax(lg) {
+        margin-right: 30px;
+    }
 
     @include breakpointMax(md) {
         margin-top: 15px;
@@ -215,7 +216,6 @@
 
 .features {
     display: flex;
-    column-gap: 30px;
 
     @include breakpointMax(xl) {
         flex-direction: column;
@@ -223,10 +223,15 @@
 }
 
 .features__tables {
+    margin-right: 30px;
     width: calc(57% - 30px);
 
     @include breakpointMax(xl) {
         width: 100%;
+    }
+
+    @include breakpointMax(lg) {
+        margin-right: 0;
     }
 }
 
@@ -333,14 +338,17 @@
 
 .equipment__images ul {
     display: flex;
-    column-gap: 10px;
-    row-gap: 10px;
     flex-wrap: wrap;
 }
 
 .equipment__images li {
+    margin-bottom: 10px;
     background: #fff;
     height: 60px;
+}
+
+.equipment__images li ~ li {
+    margin-left: 10px;
 }
 
 .equipment__images img {
@@ -349,7 +357,7 @@
 }
 
 .equipment__table {
-    margin-top: 100px;
+    margin-top: 90px;
     width: 100%;
     max-width: 446px;
     border-collapse: collapse;

@@ -8,7 +8,6 @@
 
 .articles__wrapper {
     display: flex;
-    column-gap: 30px;
 
     @include breakpointMax(xl) {
         display: block;
@@ -16,6 +15,7 @@
 }
 
 .articles__text {
+    margin-right: 30px;
     padding-right: 30px;
     flex-basis: 23.5%;
 
@@ -37,22 +37,23 @@
 }
 
 .articles__inner {
+    margin-left: -30px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
 }
 
 .services__block {
+    margin-left: 30px;
+    margin-bottom: 30px;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     position: relative;
-    flex-basis: calc((100% / 3) - 20px);
+    flex-basis: calc((100% / 3) - 30px);
     transition: all .5s ease;
 
     @include breakpointMax(lg) {
-        flex-basis: calc((100% / 2) - 20px);
+        flex-basis: calc((100% / 2) - 30px);
     }
 
     @include breakpointMax(sm) {

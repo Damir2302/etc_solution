@@ -75,11 +75,6 @@
 
 .nav {
     display: flex;
-    column-gap: 40px;
-
-    @include breakpointMax(xl) {
-        column-gap: 20px;
-    }
 
     @include breakpointMax(lg) {
         flex-direction: column;
@@ -100,6 +95,18 @@
         margin-bottom: 40px;
         display: block;
         height: auto;
+    }
+}
+
+.nav__item ~ .nav__item {
+    margin-left: 40px;
+
+    @include breakpointMax(xl) {
+        margin-left: 40px;
+    }
+
+    @include breakpointMax(lg) {
+        margin-left: 0;
     }
 }
 
@@ -352,18 +359,22 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    row-gap: 6px;
     width: 24px;
     height: 24px;
 }
 
 .icon-burger span {
+    margin-bottom: 6px;
     background: #fff;
     position: relative;
     display: block;
     width: 24px;
     height: 2px;
     transition: all .5s ease;
+}
+
+.icon-burger span:last-child {
+    margin-bottom: 0;
 }
 
 .icon-burger.opened span:nth-child(1) {

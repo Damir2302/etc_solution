@@ -4,7 +4,6 @@
     background: #353A43;
     display: flex;
     align-items: center;
-    column-gap: 10px;
     width: 295px;
     height: 50px;
     color: #BBBEC4;
@@ -17,6 +16,10 @@
     position: relative;
     font-size: 18px;
     line-height: 1.38;
+}
+
+.pagination-link:not(.pagination-arrow) {
+    margin-left: 10px;
 }
 
 .pagination-link.active {
